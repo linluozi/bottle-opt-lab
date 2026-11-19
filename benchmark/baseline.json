@@ -1,0 +1,159 @@
+{
+ "command": "benchmark/bench.py --impl baseline --out benchmark/baseline.json",
+ "corpus": {
+  "count": 628,
+  "dynamic_count": 392,
+  "sha256_rules": "eef866c7dde5406903d8de10cd19af2ffb00453aff934d7fb4da0c48480aa0f6",
+  "source": {
+   "commit": "a2f5b2fea7a5113f10251ff342c64eec2ca3dcaa",
+   "note": "all 628 concrete paths; rules adapted to Bottle syntax (<name> wildcards, escaped action colons); every entry registered as GET (read-only proxy)",
+   "path": "specification/DigitalOcean-public.v2.yaml",
+   "repo": "digitalocean/openapi",
+   "url": "https://github.com/digitalocean/openapi/blob/a2f5b2fea7a5113f10251ff342c64eec2ca3dcaa/specification/DigitalOcean-public.v2.yaml"
+  },
+  "static_count": 236
+ },
+ "cpu": "AMD EPYC 7K62 48-Core Processor",
+ "generated_at": "2026-11-19T08:13:11Z",
+ "impl": "baseline",
+ "mem_total_kb": 3812564,
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "python_version": "3.12.3",
+ "scales": {
+  "real_digitalocean": {
+   "kind": "real",
+   "match_us": {
+    "mean": 29.145403765141964,
+    "median": 26.483586989343166,
+    "n": 5,
+    "p25": 26.446771807968616,
+    "p75": 26.784460060298443,
+    "rel_sd_pct": 20.741724001411413
+   },
+   "n_dynamic": 392,
+   "n_routes": 628,
+   "ready_ms": {
+    "mean": 1187.653623521328,
+    "median": 1189.891573973,
+    "n": 5,
+    "p25": 1184.2654962092638,
+    "p75": 1190.7150205224752,
+    "rel_sd_pct": 0.32778436979424314
+   },
+   "registration_ms": {
+    "mean": 1187.6033812761307,
+    "median": 1189.8335944861174,
+    "n": 5,
+    "p25": 1184.2225547879934,
+    "p75": 1190.6684031710029,
+    "rel_sd_pct": 0.32741852436966284
+   },
+   "samples": 5,
+   "warmup": 3
+  },
+  "synthetic_100": {
+   "kind": "synthetic",
+   "match_us": {
+    "mean": 9.242349304258823,
+    "median": 9.177559986710548,
+    "n": 5,
+    "p25": 9.177308529615402,
+    "p75": 9.330944158136845,
+    "rel_sd_pct": 1.2604507595084473
+   },
+   "n_dynamic": 100,
+   "n_routes": 100,
+   "ready_ms": {
+    "mean": 2.6955541223287582,
+    "median": 2.692021429538727,
+    "n": 5,
+    "p25": 2.6903199031949043,
+    "p75": 2.703903242945671,
+    "rel_sd_pct": 1.2189277280564892
+   },
+   "registration_ms": {
+    "mean": 2.68256738781929,
+    "median": 2.678915858268738,
+    "n": 5,
+    "p25": 2.677174285054207,
+    "p75": 2.690497785806656,
+    "rel_sd_pct": 1.2332820045081458
+   },
+   "samples": 5,
+   "warmup": 3
+  },
+  "synthetic_2000": {
+   "kind": "synthetic",
+   "match_us": {
+    "mean": 156.98156133294106,
+    "median": 156.94867819547653,
+    "n": 5,
+    "p25": 156.74955677241087,
+    "p75": 157.14384615421295,
+    "rel_sd_pct": 0.3148082427697483
+   },
+   "n_dynamic": 2000,
+   "n_routes": 2000,
+   "ready_ms": {
+    "mean": 5340.711081027985,
+    "median": 5342.778300866485,
+    "n": 5,
+    "p25": 5341.307275928557,
+    "p75": 5346.612819470465,
+    "rel_sd_pct": 0.2676606040379009
+   },
+   "registration_ms": {
+    "mean": 5340.537943132222,
+    "median": 5342.604564502835,
+    "n": 5,
+    "p25": 5341.139510273933,
+    "p75": 5346.431198529899,
+    "rel_sd_pct": 0.2676072901092586
+   },
+   "samples": 5,
+   "warmup": 3
+  },
+  "synthetic_500": {
+   "kind": "synthetic",
+   "match_us": {
+    "mean": 40.46988859772682,
+    "median": 40.47970753163099,
+    "n": 5,
+    "p25": 40.27486778795719,
+    "p75": 40.50901625305414,
+    "rel_sd_pct": 0.5721796481578134
+   },
+   "n_dynamic": 500,
+   "n_routes": 500,
+   "ready_ms": {
+    "mean": 1156.7974573001266,
+    "median": 1158.4078427404165,
+    "n": 5,
+    "p25": 1149.2413179948926,
+    "p75": 1164.1041990369558,
+    "rel_sd_pct": 0.6907737745799568
+   },
+   "registration_ms": {
+    "mean": 1156.7492946982384,
+    "median": 1158.3592304959893,
+    "n": 5,
+    "p25": 1149.1940077394247,
+    "p75": 1164.0559993684292,
+    "rel_sd_pct": 0.6908097671972685
+   },
+   "samples": 5,
+   "warmup": 3
+  }
+ },
+ "seed": "no RNG: route sets and request paths are deterministic index constructions",
+ "upstream_tests": {
+  "base_commit": "aba0c1a7ee59ed851db001d100b6a792b54a94a3",
+  "command": "git clone --depth=1 git@github-linluozi:bottlepy/bottle.git /tmp/g1-bottle && cd /tmp/g1-bottle && git apply --check <repo>/patch.diff && git apply <repo>/patch.diff && python3 -m pytest test -q --no-header -p no:cacheprovider",
+  "note": "pristine and patched runs are the same command on the same commit; only patch.diff differs",
+  "patched_result": "363 passed in 0.54s",
+  "pristine_result": "363 passed in 0.70s",
+  "pytest": "9.2.0",
+  "python": "3.12.3",
+  "upstream": "bottlepy/bottle"
+ }
+}

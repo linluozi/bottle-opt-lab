@@ -1,0 +1,1 @@
+{"first_match_s": 4.8772431910037994e-05, "impl": "baseline", "match_each_s": 4.0678377263247964e-05, "match_reps": 200, "n_dynamic": 500, "n_routes": 500, "python": "3.12.3", "ready_s": 0.9307486303150654, "registration_s": 0.9306998578831553, "sample": 0, "scale": "synthetic_500", "warmup": true}

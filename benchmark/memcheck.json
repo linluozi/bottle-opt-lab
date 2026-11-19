@@ -1,0 +1,23 @@
+{
+ "impls": {
+  "baseline": {
+   "maxrss_kb": [
+    33996,
+    33996,
+    33752
+   ],
+   "median_kb": 33996
+  },
+  "optimized": {
+   "maxrss_kb": [
+    28992,
+    28860,
+    28864
+   ],
+   "median_kb": 28864
+  }
+ },
+ "n_routes": 2000,
+ "ratio_opt_over_base": 0.8490410636545476,
+ "reps": 3
+}

@@ -1,0 +1,10 @@
+{
+ "base_commit": "aba0c1a7ee59ed851db001d100b6a792b54a94a3",
+ "upstream": "bottlepy/bottle",
+ "command": "git clone --depth=1 git@github-linluozi:bottlepy/bottle.git /tmp/g1-bottle && cd /tmp/g1-bottle && git apply --check <repo>/patch.diff && git apply <repo>/patch.diff && python3 -m pytest test -q --no-header -p no:cacheprovider",
+ "pristine_result": "363 passed in 0.70s",
+ "patched_result": "363 passed in 0.54s",
+ "python": "3.12.3",
+ "pytest": "9.2.0",
+ "note": "pristine and patched runs are the same command on the same commit; only patch.diff differs"
+}

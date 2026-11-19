@@ -1,0 +1,3155 @@
+{
+ "source": {
+  "repo": "digitalocean/openapi",
+  "path": "specification/DigitalOcean-public.v2.yaml",
+  "commit": "a2f5b2fea7a5113f10251ff342c64eec2ca3dcaa",
+  "url": "https://github.com/digitalocean/openapi/blob/a2f5b2fea7a5113f10251ff342c64eec2ca3dcaa/specification/DigitalOcean-public.v2.yaml",
+  "note": "all 628 concrete paths; rules adapted to Bottle syntax (<name> wildcards, escaped action colons); every entry registered as GET (read-only proxy)"
+ },
+ "count": 628,
+ "dynamic_count": 392,
+ "static_count": 236,
+ "sha256_rules": "eef866c7dde5406903d8de10cd19af2ffb00453aff934d7fb4da0c48480aa0f6",
+ "entries": [
+  {
+   "rule": "/v2/action-gateway/actors/<actor_id>/limits",
+   "url": "/v2/action-gateway/actors/v0/limits",
+   "source_path": "/v2/action-gateway/actors/{actor_id}/limits"
+  },
+  {
+   "rule": "/v2/action-gateway/actors/<actor_id>/limits\\:clear",
+   "url": "/v2/action-gateway/actors/v1/limits:clear",
+   "source_path": "/v2/action-gateway/actors/{actor_id}/limits:clear"
+  },
+  {
+   "rule": "/v2/action-gateway/actors/<actor_id>/limits\\:set",
+   "url": "/v2/action-gateway/actors/v2/limits:set",
+   "source_path": "/v2/action-gateway/actors/{actor_id}/limits:set"
+  },
+  {
+   "rule": "/v2/action-gateway/provider-credentials",
+   "url": "/v2/action-gateway/provider-credentials",
+   "source_path": "/v2/action-gateway/provider-credentials"
+  },
+  {
+   "rule": "/v2/action-gateway/provider-credentials/<id>",
+   "url": "/v2/action-gateway/provider-credentials/v4",
+   "source_path": "/v2/action-gateway/provider-credentials/{id}"
+  },
+  {
+   "rule": "/v2/action-gateway/connections",
+   "url": "/v2/action-gateway/connections",
+   "source_path": "/v2/action-gateway/connections"
+  },
+  {
+   "rule": "/v2/action-gateway/connections/<id>",
+   "url": "/v2/action-gateway/connections/v6",
+   "source_path": "/v2/action-gateway/connections/{id}"
+  },
+  {
+   "rule": "/v2/action-gateway/mcp-servers",
+   "url": "/v2/action-gateway/mcp-servers",
+   "source_path": "/v2/action-gateway/mcp-servers"
+  },
+  {
+   "rule": "/v2/action-gateway/mcp-servers/<server_ref>",
+   "url": "/v2/action-gateway/mcp-servers/v8",
+   "source_path": "/v2/action-gateway/mcp-servers/{server_ref}"
+  },
+  {
+   "rule": "/v2/action-gateway/mcp-servers/<server_ref>/resync",
+   "url": "/v2/action-gateway/mcp-servers/v9/resync",
+   "source_path": "/v2/action-gateway/mcp-servers/{server_ref}/resync"
+  },
+  {
+   "rule": "/v2/action-gateway/mcp-servers/<server_ref>/tools",
+   "url": "/v2/action-gateway/mcp-servers/v10/tools",
+   "source_path": "/v2/action-gateway/mcp-servers/{server_ref}/tools"
+  },
+  {
+   "rule": "/v2/action-gateway/output-views",
+   "url": "/v2/action-gateway/output-views",
+   "source_path": "/v2/action-gateway/output-views"
+  },
+  {
+   "rule": "/v2/action-gateway/output-views/preview",
+   "url": "/v2/action-gateway/output-views/preview",
+   "source_path": "/v2/action-gateway/output-views/preview"
+  },
+  {
+   "rule": "/v2/action-gateway/output-views/<view_id>",
+   "url": "/v2/action-gateway/output-views/v13",
+   "source_path": "/v2/action-gateway/output-views/{view_id}"
+  },
+  {
+   "rule": "/v2/action-gateway/endpoints",
+   "url": "/v2/action-gateway/endpoints",
+   "source_path": "/v2/action-gateway/endpoints"
+  },
+  {
+   "rule": "/v2/action-gateway/endpoints/search",
+   "url": "/v2/action-gateway/endpoints/search",
+   "source_path": "/v2/action-gateway/endpoints/search"
+  },
+  {
+   "rule": "/v2/action-gateway/endpoints/<endpoint_id>",
+   "url": "/v2/action-gateway/endpoints/v16",
+   "source_path": "/v2/action-gateway/endpoints/{endpoint_id}"
+  },
+  {
+   "rule": "/v2/action-gateway/endpoints/<endpoint_id>/versions",
+   "url": "/v2/action-gateway/endpoints/v17/versions",
+   "source_path": "/v2/action-gateway/endpoints/{endpoint_id}/versions"
+  },
+  {
+   "rule": "/v2/action-gateway/endpoints/<endpoint_id>/versions\\:promote",
+   "url": "/v2/action-gateway/endpoints/v18/versions:promote",
+   "source_path": "/v2/action-gateway/endpoints/{endpoint_id}/versions:promote"
+  },
+  {
+   "rule": "/v2/action-gateway/endpoint-versions/<version_id>",
+   "url": "/v2/action-gateway/endpoint-versions/v19",
+   "source_path": "/v2/action-gateway/endpoint-versions/{version_id}"
+  },
+  {
+   "rule": "/v2/action-gateway/sessions",
+   "url": "/v2/action-gateway/sessions",
+   "source_path": "/v2/action-gateway/sessions"
+  },
+  {
+   "rule": "/v2/action-gateway/sessions/search",
+   "url": "/v2/action-gateway/sessions/search",
+   "source_path": "/v2/action-gateway/sessions/search"
+  },
+  {
+   "rule": "/v2/action-gateway/sessions/<session_urn>",
+   "url": "/v2/action-gateway/sessions/v22",
+   "source_path": "/v2/action-gateway/sessions/{session_urn}"
+  },
+  {
+   "rule": "/v2/action-gateway/toolbelts",
+   "url": "/v2/action-gateway/toolbelts",
+   "source_path": "/v2/action-gateway/toolbelts"
+  },
+  {
+   "rule": "/v2/action-gateway/toolbelts/search",
+   "url": "/v2/action-gateway/toolbelts/search",
+   "source_path": "/v2/action-gateway/toolbelts/search"
+  },
+  {
+   "rule": "/v2/action-gateway/toolbelts/<name>",
+   "url": "/v2/action-gateway/toolbelts/v25",
+   "source_path": "/v2/action-gateway/toolbelts/{name}"
+  },
+  {
+   "rule": "/v2/action-gateway/toolbelts/<name>/providers",
+   "url": "/v2/action-gateway/toolbelts/v26/providers",
+   "source_path": "/v2/action-gateway/toolbelts/{name}/providers"
+  },
+  {
+   "rule": "/v2/action-gateway/toolbelts/<name>/providers/<provider>/tools",
+   "url": "/v2/action-gateway/toolbelts/v27/providers/v27/tools",
+   "source_path": "/v2/action-gateway/toolbelts/{name}/providers/{provider}/tools"
+  },
+  {
+   "rule": "/v2/action-gateway/toolbelts/<name>/tools/add",
+   "url": "/v2/action-gateway/toolbelts/v28/tools/add",
+   "source_path": "/v2/action-gateway/toolbelts/{name}/tools/add"
+  },
+  {
+   "rule": "/v2/action-gateway/toolbelts/<name>/tools/remove",
+   "url": "/v2/action-gateway/toolbelts/v29/tools/remove",
+   "source_path": "/v2/action-gateway/toolbelts/{name}/tools/remove"
+  },
+  {
+   "rule": "/v2/action-gateway/tools",
+   "url": "/v2/action-gateway/tools",
+   "source_path": "/v2/action-gateway/tools"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/health",
+   "url": "/v2/action-gateway/tools/health",
+   "source_path": "/v2/action-gateway/tools/health"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/health/providers",
+   "url": "/v2/action-gateway/tools/health/providers",
+   "source_path": "/v2/action-gateway/tools/health/providers"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/health/tools/<tool_slug>",
+   "url": "/v2/action-gateway/tools/health/tools/v33",
+   "source_path": "/v2/action-gateway/tools/health/tools/{tool_slug}"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/<tool_slug>/versions",
+   "url": "/v2/action-gateway/tools/v34/versions",
+   "source_path": "/v2/action-gateway/tools/{tool_slug}/versions"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/providers",
+   "url": "/v2/action-gateway/tools/providers",
+   "source_path": "/v2/action-gateway/tools/providers"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/providers/search",
+   "url": "/v2/action-gateway/tools/providers/search",
+   "source_path": "/v2/action-gateway/tools/providers/search"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/search",
+   "url": "/v2/action-gateway/tools/search",
+   "source_path": "/v2/action-gateway/tools/search"
+  },
+  {
+   "rule": "/v2/action-gateway/tools/toolkits",
+   "url": "/v2/action-gateway/tools/toolkits",
+   "source_path": "/v2/action-gateway/tools/toolkits"
+  },
+  {
+   "rule": "/v2/action-gateway/users",
+   "url": "/v2/action-gateway/users",
+   "source_path": "/v2/action-gateway/users"
+  },
+  {
+   "rule": "/v2/action-gateway/users/<user_id>",
+   "url": "/v2/action-gateway/users/v40",
+   "source_path": "/v2/action-gateway/users/{user_id}"
+  },
+  {
+   "rule": "/tools",
+   "url": "/tools",
+   "source_path": "/tools"
+  },
+  {
+   "rule": "/tools/search",
+   "url": "/tools/search",
+   "source_path": "/tools/search"
+  },
+  {
+   "rule": "/tools/invoke",
+   "url": "/tools/invoke",
+   "source_path": "/tools/invoke"
+  },
+  {
+   "rule": "/code/execute",
+   "url": "/code/execute",
+   "source_path": "/code/execute"
+  },
+  {
+   "rule": "/approvals/session/<session_id>/<approval_id>",
+   "url": "/approvals/session/v45/v45",
+   "source_path": "/approvals/session/{session_id}/{approval_id}"
+  },
+  {
+   "rule": "/approvals/<approval_id>",
+   "url": "/approvals/v46",
+   "source_path": "/approvals/{approval_id}"
+  },
+  {
+   "rule": "/v2/1-clicks",
+   "url": "/v2/1-clicks",
+   "source_path": "/v2/1-clicks"
+  },
+  {
+   "rule": "/v2/1-clicks/kubernetes",
+   "url": "/v2/1-clicks/kubernetes",
+   "source_path": "/v2/1-clicks/kubernetes"
+  },
+  {
+   "rule": "/v2/account",
+   "url": "/v2/account",
+   "source_path": "/v2/account"
+  },
+  {
+   "rule": "/v2/account/keys",
+   "url": "/v2/account/keys",
+   "source_path": "/v2/account/keys"
+  },
+  {
+   "rule": "/v2/account/keys/<ssh_key_identifier>",
+   "url": "/v2/account/keys/v51",
+   "source_path": "/v2/account/keys/{ssh_key_identifier}"
+  },
+  {
+   "rule": "/v2/actions",
+   "url": "/v2/actions",
+   "source_path": "/v2/actions"
+  },
+  {
+   "rule": "/v2/actions/<action_id>",
+   "url": "/v2/actions/v53",
+   "source_path": "/v2/actions/{action_id}"
+  },
+  {
+   "rule": "/v2/add-ons/apps",
+   "url": "/v2/add-ons/apps",
+   "source_path": "/v2/add-ons/apps"
+  },
+  {
+   "rule": "/v2/add-ons/apps/<app_slug>/metadata",
+   "url": "/v2/add-ons/apps/v55/metadata",
+   "source_path": "/v2/add-ons/apps/{app_slug}/metadata"
+  },
+  {
+   "rule": "/v2/add-ons/saas",
+   "url": "/v2/add-ons/saas",
+   "source_path": "/v2/add-ons/saas"
+  },
+  {
+   "rule": "/v2/add-ons/saas/<resource_uuid>",
+   "url": "/v2/add-ons/saas/v57",
+   "source_path": "/v2/add-ons/saas/{resource_uuid}"
+  },
+  {
+   "rule": "/v2/add-ons/saas/<resource_uuid>/plan",
+   "url": "/v2/add-ons/saas/v58/plan",
+   "source_path": "/v2/add-ons/saas/{resource_uuid}/plan"
+  },
+  {
+   "rule": "/v2/harness-runtime/auth/<provider>",
+   "url": "/v2/harness-runtime/auth/v59",
+   "source_path": "/v2/harness-runtime/auth/{provider}"
+  },
+  {
+   "rule": "/v2/harness-runtime/auth/<provider>/poll",
+   "url": "/v2/harness-runtime/auth/v60/poll",
+   "source_path": "/v2/harness-runtime/auth/{provider}/poll"
+  },
+  {
+   "rule": "/v2/harness-runtime/auth/<provider>/connections",
+   "url": "/v2/harness-runtime/auth/v61/connections",
+   "source_path": "/v2/harness-runtime/auth/{provider}/connections"
+  },
+  {
+   "rule": "/v2/harness-runtime/auth/<provider>/connections/<connection_id>",
+   "url": "/v2/harness-runtime/auth/v62/connections/v62",
+   "source_path": "/v2/harness-runtime/auth/{provider}/connections/{connection_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/auth/<provider>/connections/<connection_id>/reconnect",
+   "url": "/v2/harness-runtime/auth/v63/connections/v63/reconnect",
+   "source_path": "/v2/harness-runtime/auth/{provider}/connections/{connection_id}/reconnect"
+  },
+  {
+   "rule": "/v2/harness-runtime/image-messages",
+   "url": "/v2/harness-runtime/image-messages",
+   "source_path": "/v2/harness-runtime/image-messages"
+  },
+  {
+   "rule": "/v2/harness-runtime/configs",
+   "url": "/v2/harness-runtime/configs",
+   "source_path": "/v2/harness-runtime/configs"
+  },
+  {
+   "rule": "/v2/harness-runtime/configs/<config_id>",
+   "url": "/v2/harness-runtime/configs/v66",
+   "source_path": "/v2/harness-runtime/configs/{config_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/configs/<config_id>/clone",
+   "url": "/v2/harness-runtime/configs/v67/clone",
+   "source_path": "/v2/harness-runtime/configs/{config_id}/clone"
+  },
+  {
+   "rule": "/v2/harness-runtime/configs/<config_id>/sessions",
+   "url": "/v2/harness-runtime/configs/v68/sessions",
+   "source_path": "/v2/harness-runtime/configs/{config_id}/sessions"
+  },
+  {
+   "rule": "/v2/harness-runtime/regions",
+   "url": "/v2/harness-runtime/regions",
+   "source_path": "/v2/harness-runtime/regions"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions",
+   "url": "/v2/harness-runtime/sessions",
+   "source_path": "/v2/harness-runtime/sessions"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/policy/validate",
+   "url": "/v2/harness-runtime/sessions/policy/validate",
+   "source_path": "/v2/harness-runtime/sessions/policy/validate"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/sandbox/sizes",
+   "url": "/v2/harness-runtime/sessions/sandbox/sizes",
+   "source_path": "/v2/harness-runtime/sessions/sandbox/sizes"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>",
+   "url": "/v2/harness-runtime/sessions/v73",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/checkpoints",
+   "url": "/v2/harness-runtime/sessions/v74/checkpoints",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/checkpoints"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/checkpoints/<checkpoint_id>",
+   "url": "/v2/harness-runtime/sessions/v75/checkpoints/v75",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/checkpoints/{checkpoint_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/checkpoints/<checkpoint_id>/image-messages",
+   "url": "/v2/harness-runtime/sessions/v76/checkpoints/v76/image-messages",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/checkpoints/{checkpoint_id}/image-messages"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/checkpoints/<checkpoint_id>/rollback",
+   "url": "/v2/harness-runtime/sessions/v77/checkpoints/v77/rollback",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/checkpoints/{checkpoint_id}/rollback"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/fork",
+   "url": "/v2/harness-runtime/sessions/v78/fork",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/fork"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/hitl/<request_id>",
+   "url": "/v2/harness-runtime/sessions/v79/hitl/v79",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/hitl/{request_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/cancel",
+   "url": "/v2/harness-runtime/sessions/v80/cancel",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/cancel"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/image-messages",
+   "url": "/v2/harness-runtime/sessions/v81/image-messages",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/image-messages"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/input",
+   "url": "/v2/harness-runtime/sessions/v82/input",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/input"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/pause",
+   "url": "/v2/harness-runtime/sessions/v83/pause",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/pause"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/resume",
+   "url": "/v2/harness-runtime/sessions/v84/resume",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/resume"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/sandbox/exec",
+   "url": "/v2/harness-runtime/sessions/v85/sandbox/exec",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/sandbox/exec"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/sandbox/exec/<exec_id>/stdin",
+   "url": "/v2/harness-runtime/sessions/v86/sandbox/exec/v86/stdin",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/sandbox/exec/{exec_id}/stdin"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/workspace/download",
+   "url": "/v2/harness-runtime/sessions/v87/workspace/download",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/workspace/download"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/workspace/transfers",
+   "url": "/v2/harness-runtime/sessions/v88/workspace/transfers",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/workspace/transfers"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/workspace/transfers/<transfer_id>",
+   "url": "/v2/harness-runtime/sessions/v89/workspace/transfers/v89",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/workspace/transfers/{transfer_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/workspace/transfers/<transfer_id>/cancel",
+   "url": "/v2/harness-runtime/sessions/v90/workspace/transfers/v90/cancel",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/workspace/transfers/{transfer_id}/cancel"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/workspace/transfers/<transfer_id>/commit",
+   "url": "/v2/harness-runtime/sessions/v91/workspace/transfers/v91/commit",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/workspace/transfers/{transfer_id}/commit"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/workspace/transfers/<transfer_id>/part-upload-urls",
+   "url": "/v2/harness-runtime/sessions/v92/workspace/transfers/v92/part-upload-urls",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/workspace/transfers/{transfer_id}/part-upload-urls"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/workspace/upload",
+   "url": "/v2/harness-runtime/sessions/v93/workspace/upload",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/workspace/upload"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/events",
+   "url": "/v2/harness-runtime/sessions/v94/events",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/events"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/port-forward/<port>",
+   "url": "/v2/harness-runtime/sessions/v95/port-forward/v95",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/port-forward/{port}"
+  },
+  {
+   "rule": "/v2/harness-runtime/sessions/<session_id>/ingress",
+   "url": "/v2/harness-runtime/sessions/v96/ingress",
+   "source_path": "/v2/harness-runtime/sessions/{session_id}/ingress"
+  },
+  {
+   "rule": "/v2/harness-runtime/templates",
+   "url": "/v2/harness-runtime/templates",
+   "source_path": "/v2/harness-runtime/templates"
+  },
+  {
+   "rule": "/v2/harness-runtime/templates/<template_id>",
+   "url": "/v2/harness-runtime/templates/v98",
+   "source_path": "/v2/harness-runtime/templates/{template_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/templates/<template_id>/builds",
+   "url": "/v2/harness-runtime/templates/v99/builds",
+   "source_path": "/v2/harness-runtime/templates/{template_id}/builds"
+  },
+  {
+   "rule": "/v2/harness-runtime/templates/<template_id>/builds/<build_id>",
+   "url": "/v2/harness-runtime/templates/v100/builds/v100",
+   "source_path": "/v2/harness-runtime/templates/{template_id}/builds/{build_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers",
+   "url": "/v2/harness-runtime/triggers",
+   "source_path": "/v2/harness-runtime/triggers"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/by-session/<session_id>",
+   "url": "/v2/harness-runtime/triggers/by-session/v102",
+   "source_path": "/v2/harness-runtime/triggers/by-session/{session_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/reusable-sessions",
+   "url": "/v2/harness-runtime/triggers/reusable-sessions",
+   "source_path": "/v2/harness-runtime/triggers/reusable-sessions"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/<trigger_id>",
+   "url": "/v2/harness-runtime/triggers/v104",
+   "source_path": "/v2/harness-runtime/triggers/{trigger_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/<trigger_id>/executions",
+   "url": "/v2/harness-runtime/triggers/v105/executions",
+   "source_path": "/v2/harness-runtime/triggers/{trigger_id}/executions"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/<trigger_id>/executions/<execution_id>",
+   "url": "/v2/harness-runtime/triggers/v106/executions/v106",
+   "source_path": "/v2/harness-runtime/triggers/{trigger_id}/executions/{execution_id}"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/<trigger_id>/executions/<execution_id>/cancel",
+   "url": "/v2/harness-runtime/triggers/v107/executions/v107/cancel",
+   "source_path": "/v2/harness-runtime/triggers/{trigger_id}/executions/{execution_id}/cancel"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/<trigger_id>/rotate-secret",
+   "url": "/v2/harness-runtime/triggers/v108/rotate-secret",
+   "source_path": "/v2/harness-runtime/triggers/{trigger_id}/rotate-secret"
+  },
+  {
+   "rule": "/v2/harness-runtime/triggers/<trigger_id>/webhook",
+   "url": "/v2/harness-runtime/triggers/v109/webhook",
+   "source_path": "/v2/harness-runtime/triggers/{trigger_id}/webhook"
+  },
+  {
+   "rule": "/v2/harness-runtime/webhook-providers",
+   "url": "/v2/harness-runtime/webhook-providers",
+   "source_path": "/v2/harness-runtime/webhook-providers"
+  },
+  {
+   "rule": "/v2/harness-runtime/workspaces",
+   "url": "/v2/harness-runtime/workspaces",
+   "source_path": "/v2/harness-runtime/workspaces"
+  },
+  {
+   "rule": "/v2/harness-runtime/workspaces/<workspace_id>",
+   "url": "/v2/harness-runtime/workspaces/v112",
+   "source_path": "/v2/harness-runtime/workspaces/{workspace_id}"
+  },
+  {
+   "rule": "/v2/apps",
+   "url": "/v2/apps",
+   "source_path": "/v2/apps"
+  },
+  {
+   "rule": "/v2/apps/<id>",
+   "url": "/v2/apps/v114",
+   "source_path": "/v2/apps/{id}"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/restart",
+   "url": "/v2/apps/v115/restart",
+   "source_path": "/v2/apps/{app_id}/restart"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/components/<component_name>/logs",
+   "url": "/v2/apps/v116/components/v116/logs",
+   "source_path": "/v2/apps/{app_id}/components/{component_name}/logs"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/components/<component_name>/exec",
+   "url": "/v2/apps/v117/components/v117/exec",
+   "source_path": "/v2/apps/{app_id}/components/{component_name}/exec"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/instances",
+   "url": "/v2/apps/v118/instances",
+   "source_path": "/v2/apps/{app_id}/instances"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/deployments",
+   "url": "/v2/apps/v119/deployments",
+   "source_path": "/v2/apps/{app_id}/deployments"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/deployments/<deployment_id>",
+   "url": "/v2/apps/v120/deployments/v120",
+   "source_path": "/v2/apps/{app_id}/deployments/{deployment_id}"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/deployments/<deployment_id>/cancel",
+   "url": "/v2/apps/v121/deployments/v121/cancel",
+   "source_path": "/v2/apps/{app_id}/deployments/{deployment_id}/cancel"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/deployments/<deployment_id>/components/<component_name>/logs",
+   "url": "/v2/apps/v122/deployments/v122/components/v122/logs",
+   "source_path": "/v2/apps/{app_id}/deployments/{deployment_id}/components/{component_name}/logs"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/deployments/<deployment_id>/logs",
+   "url": "/v2/apps/v123/deployments/v123/logs",
+   "source_path": "/v2/apps/{app_id}/deployments/{deployment_id}/logs"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/deployments/<deployment_id>/components/<component_name>/exec",
+   "url": "/v2/apps/v124/deployments/v124/components/v124/exec",
+   "source_path": "/v2/apps/{app_id}/deployments/{deployment_id}/components/{component_name}/exec"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/logs",
+   "url": "/v2/apps/v125/logs",
+   "source_path": "/v2/apps/{app_id}/logs"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/job-invocations",
+   "url": "/v2/apps/v126/job-invocations",
+   "source_path": "/v2/apps/{app_id}/job-invocations"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/job-invocations/<job_invocation_id>",
+   "url": "/v2/apps/v127/job-invocations/v127",
+   "source_path": "/v2/apps/{app_id}/job-invocations/{job_invocation_id}"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/job-invocations/<job_invocation_id>/cancel",
+   "url": "/v2/apps/v128/job-invocations/v128/cancel",
+   "source_path": "/v2/apps/{app_id}/job-invocations/{job_invocation_id}/cancel"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/jobs/<job_name>/invocations/<job_invocation_id>/logs",
+   "url": "/v2/apps/v129/jobs/v129/invocations/v129/logs",
+   "source_path": "/v2/apps/{app_id}/jobs/{job_name}/invocations/{job_invocation_id}/logs"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/events",
+   "url": "/v2/apps/v130/events",
+   "source_path": "/v2/apps/{app_id}/events"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/events/<event_id>",
+   "url": "/v2/apps/v131/events/v131",
+   "source_path": "/v2/apps/{app_id}/events/{event_id}"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/events/<event_id>/cancel",
+   "url": "/v2/apps/v132/events/v132/cancel",
+   "source_path": "/v2/apps/{app_id}/events/{event_id}/cancel"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/events/<event_id>/logs",
+   "url": "/v2/apps/v133/events/v133/logs",
+   "source_path": "/v2/apps/{app_id}/events/{event_id}/logs"
+  },
+  {
+   "rule": "/v2/apps/tiers/instance_sizes",
+   "url": "/v2/apps/tiers/instance_sizes",
+   "source_path": "/v2/apps/tiers/instance_sizes"
+  },
+  {
+   "rule": "/v2/apps/tiers/instance_sizes/<slug>",
+   "url": "/v2/apps/tiers/instance_sizes/v135",
+   "source_path": "/v2/apps/tiers/instance_sizes/{slug}"
+  },
+  {
+   "rule": "/v2/apps/regions",
+   "url": "/v2/apps/regions",
+   "source_path": "/v2/apps/regions"
+  },
+  {
+   "rule": "/v2/apps/propose",
+   "url": "/v2/apps/propose",
+   "source_path": "/v2/apps/propose"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/alerts",
+   "url": "/v2/apps/v138/alerts",
+   "source_path": "/v2/apps/{app_id}/alerts"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/alerts/<alert_id>/destinations",
+   "url": "/v2/apps/v139/alerts/v139/destinations",
+   "source_path": "/v2/apps/{app_id}/alerts/{alert_id}/destinations"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/rollback",
+   "url": "/v2/apps/v140/rollback",
+   "source_path": "/v2/apps/{app_id}/rollback"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/rollback/validate",
+   "url": "/v2/apps/v141/rollback/validate",
+   "source_path": "/v2/apps/{app_id}/rollback/validate"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/rollback/commit",
+   "url": "/v2/apps/v142/rollback/commit",
+   "source_path": "/v2/apps/{app_id}/rollback/commit"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/rollback/revert",
+   "url": "/v2/apps/v143/rollback/revert",
+   "source_path": "/v2/apps/{app_id}/rollback/revert"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/metrics/bandwidth_daily",
+   "url": "/v2/apps/v144/metrics/bandwidth_daily",
+   "source_path": "/v2/apps/{app_id}/metrics/bandwidth_daily"
+  },
+  {
+   "rule": "/v2/apps/metrics/bandwidth_daily",
+   "url": "/v2/apps/metrics/bandwidth_daily",
+   "source_path": "/v2/apps/metrics/bandwidth_daily"
+  },
+  {
+   "rule": "/v2/apps/<app_id>/health",
+   "url": "/v2/apps/v146/health",
+   "source_path": "/v2/apps/{app_id}/health"
+  },
+  {
+   "rule": "/v2/cdn/endpoints",
+   "url": "/v2/cdn/endpoints",
+   "source_path": "/v2/cdn/endpoints"
+  },
+  {
+   "rule": "/v2/cdn/endpoints/<cdn_id>",
+   "url": "/v2/cdn/endpoints/v148",
+   "source_path": "/v2/cdn/endpoints/{cdn_id}"
+  },
+  {
+   "rule": "/v2/cdn/endpoints/<cdn_id>/cache",
+   "url": "/v2/cdn/endpoints/v149/cache",
+   "source_path": "/v2/cdn/endpoints/{cdn_id}/cache"
+  },
+  {
+   "rule": "/v2/certificates",
+   "url": "/v2/certificates",
+   "source_path": "/v2/certificates"
+  },
+  {
+   "rule": "/v2/certificates/<certificate_id>",
+   "url": "/v2/certificates/v151",
+   "source_path": "/v2/certificates/{certificate_id}"
+  },
+  {
+   "rule": "/v2/customers/my/balance",
+   "url": "/v2/customers/my/balance",
+   "source_path": "/v2/customers/my/balance"
+  },
+  {
+   "rule": "/v2/customers/my/prepayment_config",
+   "url": "/v2/customers/my/prepayment_config",
+   "source_path": "/v2/customers/my/prepayment_config"
+  },
+  {
+   "rule": "/v2/customers/my/prepayment_status",
+   "url": "/v2/customers/my/prepayment_status",
+   "source_path": "/v2/customers/my/prepayment_status"
+  },
+  {
+   "rule": "/v2/customers/my/billing_history",
+   "url": "/v2/customers/my/billing_history",
+   "source_path": "/v2/customers/my/billing_history"
+  },
+  {
+   "rule": "/v2/customers/my/invoices",
+   "url": "/v2/customers/my/invoices",
+   "source_path": "/v2/customers/my/invoices"
+  },
+  {
+   "rule": "/v2/customers/my/invoices/<invoice_uuid>",
+   "url": "/v2/customers/my/invoices/v157",
+   "source_path": "/v2/customers/my/invoices/{invoice_uuid}"
+  },
+  {
+   "rule": "/v2/customers/my/invoices/<invoice_uuid>/csv",
+   "url": "/v2/customers/my/invoices/v158/csv",
+   "source_path": "/v2/customers/my/invoices/{invoice_uuid}/csv"
+  },
+  {
+   "rule": "/v2/customers/my/invoices/<invoice_uuid>/pdf",
+   "url": "/v2/customers/my/invoices/v159/pdf",
+   "source_path": "/v2/customers/my/invoices/{invoice_uuid}/pdf"
+  },
+  {
+   "rule": "/v2/customers/my/invoices/<invoice_uuid>/summary",
+   "url": "/v2/customers/my/invoices/v160/summary",
+   "source_path": "/v2/customers/my/invoices/{invoice_uuid}/summary"
+  },
+  {
+   "rule": "/v2/billing/<account_urn>/insights/<start_date>/<end_date>",
+   "url": "/v2/billing/v161/insights/v161/v161",
+   "source_path": "/v2/billing/{account_urn}/insights/{start_date}/{end_date}"
+  },
+  {
+   "rule": "/v2/databases/options",
+   "url": "/v2/databases/options",
+   "source_path": "/v2/databases/options"
+  },
+  {
+   "rule": "/v2/databases",
+   "url": "/v2/databases",
+   "source_path": "/v2/databases"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>",
+   "url": "/v2/databases/v164",
+   "source_path": "/v2/databases/{database_cluster_uuid}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/config",
+   "url": "/v2/databases/v165/config",
+   "source_path": "/v2/databases/{database_cluster_uuid}/config"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/ca",
+   "url": "/v2/databases/v166/ca",
+   "source_path": "/v2/databases/{database_cluster_uuid}/ca"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/online-migration",
+   "url": "/v2/databases/v167/online-migration",
+   "source_path": "/v2/databases/{database_cluster_uuid}/online-migration"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/online-migration/<migration_id>",
+   "url": "/v2/databases/v168/online-migration/v168",
+   "source_path": "/v2/databases/{database_cluster_uuid}/online-migration/{migration_id}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/migrate",
+   "url": "/v2/databases/v169/migrate",
+   "source_path": "/v2/databases/{database_cluster_uuid}/migrate"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/resize",
+   "url": "/v2/databases/v170/resize",
+   "source_path": "/v2/databases/{database_cluster_uuid}/resize"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/firewall",
+   "url": "/v2/databases/v171/firewall",
+   "source_path": "/v2/databases/{database_cluster_uuid}/firewall"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/do_settings",
+   "url": "/v2/databases/v172/do_settings",
+   "source_path": "/v2/databases/{database_cluster_uuid}/do_settings"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/maintenance",
+   "url": "/v2/databases/v173/maintenance",
+   "source_path": "/v2/databases/{database_cluster_uuid}/maintenance"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/install_update",
+   "url": "/v2/databases/v174/install_update",
+   "source_path": "/v2/databases/{database_cluster_uuid}/install_update"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/backups",
+   "url": "/v2/databases/v175/backups",
+   "source_path": "/v2/databases/{database_cluster_uuid}/backups"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/replicas",
+   "url": "/v2/databases/v176/replicas",
+   "source_path": "/v2/databases/{database_cluster_uuid}/replicas"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/events",
+   "url": "/v2/databases/v177/events",
+   "source_path": "/v2/databases/{database_cluster_uuid}/events"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/replicas/<replica_name>",
+   "url": "/v2/databases/v178/replicas/v178",
+   "source_path": "/v2/databases/{database_cluster_uuid}/replicas/{replica_name}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/replicas/<replica_name>/promote",
+   "url": "/v2/databases/v179/replicas/v179/promote",
+   "source_path": "/v2/databases/{database_cluster_uuid}/replicas/{replica_name}/promote"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/users",
+   "url": "/v2/databases/v180/users",
+   "source_path": "/v2/databases/{database_cluster_uuid}/users"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/users/<username>",
+   "url": "/v2/databases/v181/users/v181",
+   "source_path": "/v2/databases/{database_cluster_uuid}/users/{username}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/users/<username>/reset_auth",
+   "url": "/v2/databases/v182/users/v182/reset_auth",
+   "source_path": "/v2/databases/{database_cluster_uuid}/users/{username}/reset_auth"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/dbs",
+   "url": "/v2/databases/v183/dbs",
+   "source_path": "/v2/databases/{database_cluster_uuid}/dbs"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/dbs/<database_name>",
+   "url": "/v2/databases/v184/dbs/v184",
+   "source_path": "/v2/databases/{database_cluster_uuid}/dbs/{database_name}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/pools",
+   "url": "/v2/databases/v185/pools",
+   "source_path": "/v2/databases/{database_cluster_uuid}/pools"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/pools/<pool_name>",
+   "url": "/v2/databases/v186/pools/v186",
+   "source_path": "/v2/databases/{database_cluster_uuid}/pools/{pool_name}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/eviction_policy",
+   "url": "/v2/databases/v187/eviction_policy",
+   "source_path": "/v2/databases/{database_cluster_uuid}/eviction_policy"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/sql_mode",
+   "url": "/v2/databases/v188/sql_mode",
+   "source_path": "/v2/databases/{database_cluster_uuid}/sql_mode"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/upgrade",
+   "url": "/v2/databases/v189/upgrade",
+   "source_path": "/v2/databases/{database_cluster_uuid}/upgrade"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/autoscale",
+   "url": "/v2/databases/v190/autoscale",
+   "source_path": "/v2/databases/{database_cluster_uuid}/autoscale"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/topics",
+   "url": "/v2/databases/v191/topics",
+   "source_path": "/v2/databases/{database_cluster_uuid}/topics"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/topics/<topic_name>",
+   "url": "/v2/databases/v192/topics/v192",
+   "source_path": "/v2/databases/{database_cluster_uuid}/topics/{topic_name}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/logsink",
+   "url": "/v2/databases/v193/logsink",
+   "source_path": "/v2/databases/{database_cluster_uuid}/logsink"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/logsink/<logsink_id>",
+   "url": "/v2/databases/v194/logsink/v194",
+   "source_path": "/v2/databases/{database_cluster_uuid}/logsink/{logsink_id}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/schema-registry",
+   "url": "/v2/databases/v195/schema-registry",
+   "source_path": "/v2/databases/{database_cluster_uuid}/schema-registry"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/schema-registry/<subject_name>",
+   "url": "/v2/databases/v196/schema-registry/v196",
+   "source_path": "/v2/databases/{database_cluster_uuid}/schema-registry/{subject_name}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/schema-registry/<subject_name>/versions/<version>",
+   "url": "/v2/databases/v197/schema-registry/v197/versions/v197",
+   "source_path": "/v2/databases/{database_cluster_uuid}/schema-registry/{subject_name}/versions/{version}"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/schema-registry/config",
+   "url": "/v2/databases/v198/schema-registry/config",
+   "source_path": "/v2/databases/{database_cluster_uuid}/schema-registry/config"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/schema-registry/config/<subject_name>",
+   "url": "/v2/databases/v199/schema-registry/config/v199",
+   "source_path": "/v2/databases/{database_cluster_uuid}/schema-registry/config/{subject_name}"
+  },
+  {
+   "rule": "/v2/databases/metrics/credentials",
+   "url": "/v2/databases/metrics/credentials",
+   "source_path": "/v2/databases/metrics/credentials"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/indexes",
+   "url": "/v2/databases/v201/indexes",
+   "source_path": "/v2/databases/{database_cluster_uuid}/indexes"
+  },
+  {
+   "rule": "/v2/databases/<database_cluster_uuid>/indexes/<index_name>",
+   "url": "/v2/databases/v202/indexes/v202",
+   "source_path": "/v2/databases/{database_cluster_uuid}/indexes/{index_name}"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/<dedicated_inference_id>",
+   "url": "/v2/dedicated-inferences/v203",
+   "source_path": "/v2/dedicated-inferences/{dedicated_inference_id}"
+  },
+  {
+   "rule": "/v2/dedicated-inferences",
+   "url": "/v2/dedicated-inferences",
+   "source_path": "/v2/dedicated-inferences"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/<dedicated_inference_id>/accelerators",
+   "url": "/v2/dedicated-inferences/v205/accelerators",
+   "source_path": "/v2/dedicated-inferences/{dedicated_inference_id}/accelerators"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/<dedicated_inference_id>/accelerators/<accelerator_id>",
+   "url": "/v2/dedicated-inferences/v206/accelerators/v206",
+   "source_path": "/v2/dedicated-inferences/{dedicated_inference_id}/accelerators/{accelerator_id}"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/<dedicated_inference_id>/ca",
+   "url": "/v2/dedicated-inferences/v207/ca",
+   "source_path": "/v2/dedicated-inferences/{dedicated_inference_id}/ca"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/<dedicated_inference_id>/tokens",
+   "url": "/v2/dedicated-inferences/v208/tokens",
+   "source_path": "/v2/dedicated-inferences/{dedicated_inference_id}/tokens"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/<dedicated_inference_id>/tokens/<token_id>",
+   "url": "/v2/dedicated-inferences/v209/tokens/v209",
+   "source_path": "/v2/dedicated-inferences/{dedicated_inference_id}/tokens/{token_id}"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/sizes",
+   "url": "/v2/dedicated-inferences/sizes",
+   "source_path": "/v2/dedicated-inferences/sizes"
+  },
+  {
+   "rule": "/v2/dedicated-inferences/gpu-model-config",
+   "url": "/v2/dedicated-inferences/gpu-model-config",
+   "source_path": "/v2/dedicated-inferences/gpu-model-config"
+  },
+  {
+   "rule": "/v2/domains",
+   "url": "/v2/domains",
+   "source_path": "/v2/domains"
+  },
+  {
+   "rule": "/v2/domains/<domain_name>",
+   "url": "/v2/domains/v213",
+   "source_path": "/v2/domains/{domain_name}"
+  },
+  {
+   "rule": "/v2/domains/<domain_name>/records",
+   "url": "/v2/domains/v214/records",
+   "source_path": "/v2/domains/{domain_name}/records"
+  },
+  {
+   "rule": "/v2/domains/<domain_name>/records/<domain_record_id>",
+   "url": "/v2/domains/v215/records/v215",
+   "source_path": "/v2/domains/{domain_name}/records/{domain_record_id}"
+  },
+  {
+   "rule": "/v2/droplets",
+   "url": "/v2/droplets",
+   "source_path": "/v2/droplets"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>",
+   "url": "/v2/droplets/v217",
+   "source_path": "/v2/droplets/{droplet_id}"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/backups",
+   "url": "/v2/droplets/v218/backups",
+   "source_path": "/v2/droplets/{droplet_id}/backups"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/backups/policy",
+   "url": "/v2/droplets/v219/backups/policy",
+   "source_path": "/v2/droplets/{droplet_id}/backups/policy"
+  },
+  {
+   "rule": "/v2/droplets/backups/policies",
+   "url": "/v2/droplets/backups/policies",
+   "source_path": "/v2/droplets/backups/policies"
+  },
+  {
+   "rule": "/v2/droplets/backups/supported_policies",
+   "url": "/v2/droplets/backups/supported_policies",
+   "source_path": "/v2/droplets/backups/supported_policies"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/snapshots",
+   "url": "/v2/droplets/v222/snapshots",
+   "source_path": "/v2/droplets/{droplet_id}/snapshots"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/actions",
+   "url": "/v2/droplets/v223/actions",
+   "source_path": "/v2/droplets/{droplet_id}/actions"
+  },
+  {
+   "rule": "/v2/droplets/actions",
+   "url": "/v2/droplets/actions",
+   "source_path": "/v2/droplets/actions"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/actions/<action_id>",
+   "url": "/v2/droplets/v225/actions/v225",
+   "source_path": "/v2/droplets/{droplet_id}/actions/{action_id}"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/kernels",
+   "url": "/v2/droplets/v226/kernels",
+   "source_path": "/v2/droplets/{droplet_id}/kernels"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/firewalls",
+   "url": "/v2/droplets/v227/firewalls",
+   "source_path": "/v2/droplets/{droplet_id}/firewalls"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/neighbors",
+   "url": "/v2/droplets/v228/neighbors",
+   "source_path": "/v2/droplets/{droplet_id}/neighbors"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/destroy_with_associated_resources",
+   "url": "/v2/droplets/v229/destroy_with_associated_resources",
+   "source_path": "/v2/droplets/{droplet_id}/destroy_with_associated_resources"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/destroy_with_associated_resources/selective",
+   "url": "/v2/droplets/v230/destroy_with_associated_resources/selective",
+   "source_path": "/v2/droplets/{droplet_id}/destroy_with_associated_resources/selective"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/destroy_with_associated_resources/dangerous",
+   "url": "/v2/droplets/v231/destroy_with_associated_resources/dangerous",
+   "source_path": "/v2/droplets/{droplet_id}/destroy_with_associated_resources/dangerous"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/destroy_with_associated_resources/status",
+   "url": "/v2/droplets/v232/destroy_with_associated_resources/status",
+   "source_path": "/v2/droplets/{droplet_id}/destroy_with_associated_resources/status"
+  },
+  {
+   "rule": "/v2/droplets/<droplet_id>/destroy_with_associated_resources/retry",
+   "url": "/v2/droplets/v233/destroy_with_associated_resources/retry",
+   "source_path": "/v2/droplets/{droplet_id}/destroy_with_associated_resources/retry"
+  },
+  {
+   "rule": "/v2/droplets/autoscale",
+   "url": "/v2/droplets/autoscale",
+   "source_path": "/v2/droplets/autoscale"
+  },
+  {
+   "rule": "/v2/droplets/autoscale/<autoscale_pool_id>",
+   "url": "/v2/droplets/autoscale/v235",
+   "source_path": "/v2/droplets/autoscale/{autoscale_pool_id}"
+  },
+  {
+   "rule": "/v2/droplets/autoscale/<autoscale_pool_id>/dangerous",
+   "url": "/v2/droplets/autoscale/v236/dangerous",
+   "source_path": "/v2/droplets/autoscale/{autoscale_pool_id}/dangerous"
+  },
+  {
+   "rule": "/v2/droplets/autoscale/<autoscale_pool_id>/members",
+   "url": "/v2/droplets/autoscale/v237/members",
+   "source_path": "/v2/droplets/autoscale/{autoscale_pool_id}/members"
+  },
+  {
+   "rule": "/v2/droplets/autoscale/<autoscale_pool_id>/history",
+   "url": "/v2/droplets/autoscale/v238/history",
+   "source_path": "/v2/droplets/autoscale/{autoscale_pool_id}/history"
+  },
+  {
+   "rule": "/v2/firewalls",
+   "url": "/v2/firewalls",
+   "source_path": "/v2/firewalls"
+  },
+  {
+   "rule": "/v2/firewalls/<firewall_id>",
+   "url": "/v2/firewalls/v240",
+   "source_path": "/v2/firewalls/{firewall_id}"
+  },
+  {
+   "rule": "/v2/firewalls/<firewall_id>/droplets",
+   "url": "/v2/firewalls/v241/droplets",
+   "source_path": "/v2/firewalls/{firewall_id}/droplets"
+  },
+  {
+   "rule": "/v2/firewalls/<firewall_id>/tags",
+   "url": "/v2/firewalls/v242/tags",
+   "source_path": "/v2/firewalls/{firewall_id}/tags"
+  },
+  {
+   "rule": "/v2/firewalls/<firewall_id>/rules",
+   "url": "/v2/firewalls/v243/rules",
+   "source_path": "/v2/firewalls/{firewall_id}/rules"
+  },
+  {
+   "rule": "/v2/floating_ips",
+   "url": "/v2/floating_ips",
+   "source_path": "/v2/floating_ips"
+  },
+  {
+   "rule": "/v2/floating_ips/<floating_ip>",
+   "url": "/v2/floating_ips/v245",
+   "source_path": "/v2/floating_ips/{floating_ip}"
+  },
+  {
+   "rule": "/v2/floating_ips/<floating_ip>/actions",
+   "url": "/v2/floating_ips/v246/actions",
+   "source_path": "/v2/floating_ips/{floating_ip}/actions"
+  },
+  {
+   "rule": "/v2/floating_ips/<floating_ip>/actions/<action_id>",
+   "url": "/v2/floating_ips/v247/actions/v247",
+   "source_path": "/v2/floating_ips/{floating_ip}/actions/{action_id}"
+  },
+  {
+   "rule": "/v2/functions/namespaces",
+   "url": "/v2/functions/namespaces",
+   "source_path": "/v2/functions/namespaces"
+  },
+  {
+   "rule": "/v2/functions/namespaces/<namespace_id>",
+   "url": "/v2/functions/namespaces/v249",
+   "source_path": "/v2/functions/namespaces/{namespace_id}"
+  },
+  {
+   "rule": "/v2/functions/namespaces/<namespace_id>/triggers",
+   "url": "/v2/functions/namespaces/v250/triggers",
+   "source_path": "/v2/functions/namespaces/{namespace_id}/triggers"
+  },
+  {
+   "rule": "/v2/functions/namespaces/<namespace_id>/triggers/<trigger_name>",
+   "url": "/v2/functions/namespaces/v251/triggers/v251",
+   "source_path": "/v2/functions/namespaces/{namespace_id}/triggers/{trigger_name}"
+  },
+  {
+   "rule": "/v2/functions/namespaces/<namespace_id>/keys",
+   "url": "/v2/functions/namespaces/v252/keys",
+   "source_path": "/v2/functions/namespaces/{namespace_id}/keys"
+  },
+  {
+   "rule": "/v2/functions/namespaces/<namespace_id>/keys/<key_id>",
+   "url": "/v2/functions/namespaces/v253/keys/v253",
+   "source_path": "/v2/functions/namespaces/{namespace_id}/keys/{key_id}"
+  },
+  {
+   "rule": "/v2/images",
+   "url": "/v2/images",
+   "source_path": "/v2/images"
+  },
+  {
+   "rule": "/v2/images/<image_id>",
+   "url": "/v2/images/v255",
+   "source_path": "/v2/images/{image_id}"
+  },
+  {
+   "rule": "/v2/images/<image_id>/account_transfer",
+   "url": "/v2/images/v256/account_transfer",
+   "source_path": "/v2/images/{image_id}/account_transfer"
+  },
+  {
+   "rule": "/v2/images/<image_id>/account_transfer/accept",
+   "url": "/v2/images/v257/account_transfer/accept",
+   "source_path": "/v2/images/{image_id}/account_transfer/accept"
+  },
+  {
+   "rule": "/v2/images/<image_id>/account_transfer/cancel",
+   "url": "/v2/images/v258/account_transfer/cancel",
+   "source_path": "/v2/images/{image_id}/account_transfer/cancel"
+  },
+  {
+   "rule": "/v2/images/<image_id>/account_transfer/decline",
+   "url": "/v2/images/v259/account_transfer/decline",
+   "source_path": "/v2/images/{image_id}/account_transfer/decline"
+  },
+  {
+   "rule": "/v2/images/<image_id>/actions",
+   "url": "/v2/images/v260/actions",
+   "source_path": "/v2/images/{image_id}/actions"
+  },
+  {
+   "rule": "/v2/images/<image_id>/actions/<action_id>",
+   "url": "/v2/images/v261/actions/v261",
+   "source_path": "/v2/images/{image_id}/actions/{action_id}"
+  },
+  {
+   "rule": "/v2/insights/alert-instances",
+   "url": "/v2/insights/alert-instances",
+   "source_path": "/v2/insights/alert-instances"
+  },
+  {
+   "rule": "/v2/insights/alert-instances/<id>",
+   "url": "/v2/insights/alert-instances/v263",
+   "source_path": "/v2/insights/alert-instances/{id}"
+  },
+  {
+   "rule": "/v2/insights/alert-rules",
+   "url": "/v2/insights/alert-rules",
+   "source_path": "/v2/insights/alert-rules"
+  },
+  {
+   "rule": "/v2/insights/alert-rules/<id>",
+   "url": "/v2/insights/alert-rules/v265",
+   "source_path": "/v2/insights/alert-rules/{id}"
+  },
+  {
+   "rule": "/v2/insights/dashboards",
+   "url": "/v2/insights/dashboards",
+   "source_path": "/v2/insights/dashboards"
+  },
+  {
+   "rule": "/v2/insights/dashboards/schema",
+   "url": "/v2/insights/dashboards/schema",
+   "source_path": "/v2/insights/dashboards/schema"
+  },
+  {
+   "rule": "/v2/insights/dashboards/<uuid>",
+   "url": "/v2/insights/dashboards/v268",
+   "source_path": "/v2/insights/dashboards/{uuid}"
+  },
+  {
+   "rule": "/v2/insights/notification-channels",
+   "url": "/v2/insights/notification-channels",
+   "source_path": "/v2/insights/notification-channels"
+  },
+  {
+   "rule": "/v2/insights/notification-channels/<id>",
+   "url": "/v2/insights/notification-channels/v270",
+   "source_path": "/v2/insights/notification-channels/{id}"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/prom/api/v1/query",
+   "url": "/v2/insights/query/v271/prom/api/v1/query",
+   "source_path": "/v2/insights/query/{region}/prom/api/v1/query"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/prom/api/v1/query_range",
+   "url": "/v2/insights/query/v272/prom/api/v1/query_range",
+   "source_path": "/v2/insights/query/{region}/prom/api/v1/query_range"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/prom/api/v1/labels",
+   "url": "/v2/insights/query/v273/prom/api/v1/labels",
+   "source_path": "/v2/insights/query/{region}/prom/api/v1/labels"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/prom/api/v1/label/<name>/values",
+   "url": "/v2/insights/query/v274/prom/api/v1/label/v274/values",
+   "source_path": "/v2/insights/query/{region}/prom/api/v1/label/{name}/values"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/prom/api/v1/series",
+   "url": "/v2/insights/query/v275/prom/api/v1/series",
+   "source_path": "/v2/insights/query/{region}/prom/api/v1/series"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/logs/search",
+   "url": "/v2/insights/query/v276/logs/search",
+   "source_path": "/v2/insights/query/{region}/logs/search"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/traces/search",
+   "url": "/v2/insights/query/v277/traces/search",
+   "source_path": "/v2/insights/query/{region}/traces/search"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/traces/<trace_id>",
+   "url": "/v2/insights/query/v278/traces/v278",
+   "source_path": "/v2/insights/query/{region}/traces/{trace_id}"
+  },
+  {
+   "rule": "/v2/insights/query/<region>/spans/search",
+   "url": "/v2/insights/query/v279/spans/search",
+   "source_path": "/v2/insights/query/{region}/spans/search"
+  },
+  {
+   "rule": "/v2/insights/resources",
+   "url": "/v2/insights/resources",
+   "source_path": "/v2/insights/resources"
+  },
+  {
+   "rule": "/v2/insights/resources/<resource_urn>",
+   "url": "/v2/insights/resources/v281",
+   "source_path": "/v2/insights/resources/{resource_urn}"
+  },
+  {
+   "rule": "/v2/insights/resources/<resource_urn>/signals",
+   "url": "/v2/insights/resources/v282/signals",
+   "source_path": "/v2/insights/resources/{resource_urn}/signals"
+  },
+  {
+   "rule": "/v1/consent",
+   "url": "/v1/consent",
+   "source_path": "/v1/consent"
+  },
+  {
+   "rule": "/v1/consent/<environment_id>",
+   "url": "/v1/consent/v284",
+   "source_path": "/v1/consent/{environment_id}"
+  },
+  {
+   "rule": "/v1/signals/agents/<environment_id>/sessions",
+   "url": "/v1/signals/agents/v285/sessions",
+   "source_path": "/v1/signals/agents/{environment_id}/sessions"
+  },
+  {
+   "rule": "/v1/signals/sessions/<session_id>/dialogues",
+   "url": "/v1/signals/sessions/v286/dialogues",
+   "source_path": "/v1/signals/sessions/{session_id}/dialogues"
+  },
+  {
+   "rule": "/v1/signals/exports",
+   "url": "/v1/signals/exports",
+   "source_path": "/v1/signals/exports"
+  },
+  {
+   "rule": "/v1/signals/exports/options",
+   "url": "/v1/signals/exports/options",
+   "source_path": "/v1/signals/exports/options"
+  },
+  {
+   "rule": "/v1/signals/exports/<export_id>",
+   "url": "/v1/signals/exports/v289",
+   "source_path": "/v1/signals/exports/{export_id}"
+  },
+  {
+   "rule": "/v1/signals/exports/<export_id>/download",
+   "url": "/v1/signals/exports/v290/download",
+   "source_path": "/v1/signals/exports/{export_id}/download"
+  },
+  {
+   "rule": "/v1/signals/deletions",
+   "url": "/v1/signals/deletions",
+   "source_path": "/v1/signals/deletions"
+  },
+  {
+   "rule": "/v1/signals/deletions/<deletion_id>",
+   "url": "/v1/signals/deletions/v292",
+   "source_path": "/v1/signals/deletions/{deletion_id}"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters",
+   "url": "/v2/kubernetes/clusters",
+   "source_path": "/v2/kubernetes/clusters"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>",
+   "url": "/v2/kubernetes/clusters/v294",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/destroy_with_associated_resources",
+   "url": "/v2/kubernetes/clusters/v295/destroy_with_associated_resources",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/destroy_with_associated_resources"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/destroy_with_associated_resources/selective",
+   "url": "/v2/kubernetes/clusters/v296/destroy_with_associated_resources/selective",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/destroy_with_associated_resources/selective"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/destroy_with_associated_resources/dangerous",
+   "url": "/v2/kubernetes/clusters/v297/destroy_with_associated_resources/dangerous",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/destroy_with_associated_resources/dangerous"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/kubeconfig",
+   "url": "/v2/kubernetes/clusters/v298/kubeconfig",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/kubeconfig"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/credentials",
+   "url": "/v2/kubernetes/clusters/v299/credentials",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/credentials"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/upgrades",
+   "url": "/v2/kubernetes/clusters/v300/upgrades",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/upgrades"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/upgrade",
+   "url": "/v2/kubernetes/clusters/v301/upgrade",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/upgrade"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/node_pools",
+   "url": "/v2/kubernetes/clusters/v302/node_pools",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/node_pools"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/node_pools/<node_pool_id>",
+   "url": "/v2/kubernetes/clusters/v303/node_pools/v303",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/node_pools/{node_pool_id}"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/node_pools/<node_pool_id>/nodes/<node_id>",
+   "url": "/v2/kubernetes/clusters/v304/node_pools/v304/nodes/v304",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/node_pools/{node_pool_id}/nodes/{node_id}"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/node_pools/<node_pool_id>/recycle",
+   "url": "/v2/kubernetes/clusters/v305/node_pools/v305/recycle",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/node_pools/{node_pool_id}/recycle"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/user",
+   "url": "/v2/kubernetes/clusters/v306/user",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/user"
+  },
+  {
+   "rule": "/v2/kubernetes/options",
+   "url": "/v2/kubernetes/options",
+   "source_path": "/v2/kubernetes/options"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/clusterlint",
+   "url": "/v2/kubernetes/clusters/v308/clusterlint",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/clusterlint"
+  },
+  {
+   "rule": "/v2/kubernetes/registry",
+   "url": "/v2/kubernetes/registry",
+   "source_path": "/v2/kubernetes/registry"
+  },
+  {
+   "rule": "/v2/kubernetes/registries",
+   "url": "/v2/kubernetes/registries",
+   "source_path": "/v2/kubernetes/registries"
+  },
+  {
+   "rule": "/v2/kubernetes/clusters/<cluster_id>/status_messages",
+   "url": "/v2/kubernetes/clusters/v311/status_messages",
+   "source_path": "/v2/kubernetes/clusters/{cluster_id}/status_messages"
+  },
+  {
+   "rule": "/v2/load_balancers",
+   "url": "/v2/load_balancers",
+   "source_path": "/v2/load_balancers"
+  },
+  {
+   "rule": "/v2/load_balancers/<lb_id>",
+   "url": "/v2/load_balancers/v313",
+   "source_path": "/v2/load_balancers/{lb_id}"
+  },
+  {
+   "rule": "/v2/load_balancers/<lb_id>/cache",
+   "url": "/v2/load_balancers/v314/cache",
+   "source_path": "/v2/load_balancers/{lb_id}/cache"
+  },
+  {
+   "rule": "/v2/load_balancers/<lb_id>/droplets",
+   "url": "/v2/load_balancers/v315/droplets",
+   "source_path": "/v2/load_balancers/{lb_id}/droplets"
+  },
+  {
+   "rule": "/v2/load_balancers/<lb_id>/forwarding_rules",
+   "url": "/v2/load_balancers/v316/forwarding_rules",
+   "source_path": "/v2/load_balancers/{lb_id}/forwarding_rules"
+  },
+  {
+   "rule": "/v2/microvms",
+   "url": "/v2/microvms",
+   "source_path": "/v2/microvms"
+  },
+  {
+   "rule": "/v2/microvms/options",
+   "url": "/v2/microvms/options",
+   "source_path": "/v2/microvms/options"
+  },
+  {
+   "rule": "/v2/microvms/checkpoints",
+   "url": "/v2/microvms/checkpoints",
+   "source_path": "/v2/microvms/checkpoints"
+  },
+  {
+   "rule": "/v2/microvms/checkpoints/<checkpoint_id>",
+   "url": "/v2/microvms/checkpoints/v320",
+   "source_path": "/v2/microvms/checkpoints/{checkpoint_id}"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>",
+   "url": "/v2/microvms/v321",
+   "source_path": "/v2/microvms/{microvm_id}"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/urls",
+   "url": "/v2/microvms/v322/urls",
+   "source_path": "/v2/microvms/{microvm_id}/urls"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/urls/<url_id>",
+   "url": "/v2/microvms/v323/urls/v323",
+   "source_path": "/v2/microvms/{microvm_id}/urls/{url_id}"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/access_tokens",
+   "url": "/v2/microvms/v324/access_tokens",
+   "source_path": "/v2/microvms/{microvm_id}/access_tokens"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/access_tokens/<token_id>",
+   "url": "/v2/microvms/v325/access_tokens/v325",
+   "source_path": "/v2/microvms/{microvm_id}/access_tokens/{token_id}"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/pause",
+   "url": "/v2/microvms/v326/pause",
+   "source_path": "/v2/microvms/{microvm_id}/pause"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/resume",
+   "url": "/v2/microvms/v327/resume",
+   "source_path": "/v2/microvms/{microvm_id}/resume"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/exec",
+   "url": "/v2/microvms/v328/exec",
+   "source_path": "/v2/microvms/{microvm_id}/exec"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/console",
+   "url": "/v2/microvms/v329/console",
+   "source_path": "/v2/microvms/{microvm_id}/console"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/files",
+   "url": "/v2/microvms/v330/files",
+   "source_path": "/v2/microvms/{microvm_id}/files"
+  },
+  {
+   "rule": "/v2/microvms/<microvm_id>/checkpoints",
+   "url": "/v2/microvms/v331/checkpoints",
+   "source_path": "/v2/microvms/{microvm_id}/checkpoints"
+  },
+  {
+   "rule": "/v2/monitoring/alerts",
+   "url": "/v2/monitoring/alerts",
+   "source_path": "/v2/monitoring/alerts"
+  },
+  {
+   "rule": "/v2/monitoring/alerts/<alert_uuid>",
+   "url": "/v2/monitoring/alerts/v333",
+   "source_path": "/v2/monitoring/alerts/{alert_uuid}"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/bandwidth",
+   "url": "/v2/monitoring/metrics/droplet/bandwidth",
+   "source_path": "/v2/monitoring/metrics/droplet/bandwidth"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/cpu",
+   "url": "/v2/monitoring/metrics/droplet/cpu",
+   "source_path": "/v2/monitoring/metrics/droplet/cpu"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/filesystem_free",
+   "url": "/v2/monitoring/metrics/droplet/filesystem_free",
+   "source_path": "/v2/monitoring/metrics/droplet/filesystem_free"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/filesystem_size",
+   "url": "/v2/monitoring/metrics/droplet/filesystem_size",
+   "source_path": "/v2/monitoring/metrics/droplet/filesystem_size"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/load_1",
+   "url": "/v2/monitoring/metrics/droplet/load_1",
+   "source_path": "/v2/monitoring/metrics/droplet/load_1"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/load_5",
+   "url": "/v2/monitoring/metrics/droplet/load_5",
+   "source_path": "/v2/monitoring/metrics/droplet/load_5"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/load_15",
+   "url": "/v2/monitoring/metrics/droplet/load_15",
+   "source_path": "/v2/monitoring/metrics/droplet/load_15"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/memory_cached",
+   "url": "/v2/monitoring/metrics/droplet/memory_cached",
+   "source_path": "/v2/monitoring/metrics/droplet/memory_cached"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/memory_free",
+   "url": "/v2/monitoring/metrics/droplet/memory_free",
+   "source_path": "/v2/monitoring/metrics/droplet/memory_free"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/memory_total",
+   "url": "/v2/monitoring/metrics/droplet/memory_total",
+   "source_path": "/v2/monitoring/metrics/droplet/memory_total"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet/memory_available",
+   "url": "/v2/monitoring/metrics/droplet/memory_available",
+   "source_path": "/v2/monitoring/metrics/droplet/memory_available"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/apps/memory_percentage",
+   "url": "/v2/monitoring/metrics/apps/memory_percentage",
+   "source_path": "/v2/monitoring/metrics/apps/memory_percentage"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/apps/cpu_percentage",
+   "url": "/v2/monitoring/metrics/apps/cpu_percentage",
+   "source_path": "/v2/monitoring/metrics/apps/cpu_percentage"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/apps/restart_count",
+   "url": "/v2/monitoring/metrics/apps/restart_count",
+   "source_path": "/v2/monitoring/metrics/apps/restart_count"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_connections_current",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_connections_current",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_connections_current"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_connections_limit",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_connections_limit",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_connections_limit"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_cpu_utilization",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_cpu_utilization",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_cpu_utilization"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_firewall_dropped_bytes",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_firewall_dropped_bytes",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_firewall_dropped_bytes"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_firewall_dropped_packets",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_firewall_dropped_packets",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_firewall_dropped_packets"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_http_responses",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_http_responses",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_http_responses"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_http_requests_per_second",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_http_requests_per_second",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_http_requests_per_second"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_http",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_http",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_http"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_udp",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_udp",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_udp"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_tcp",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_tcp",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_network_throughput_tcp"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_nlb_tcp_network_throughput",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_nlb_tcp_network_throughput",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_nlb_tcp_network_throughput"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_nlb_udp_network_throughput",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_nlb_udp_network_throughput",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_nlb_udp_network_throughput"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_current",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_current",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_current"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_limit",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_limit",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_limit"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_exceeding_rate_limit",
+   "url": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_exceeding_rate_limit",
+   "source_path": "/v2/monitoring/metrics/load_balancer/frontend_tls_connections_exceeding_rate_limit"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_avg",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_avg",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_avg"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_50p",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_50p",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_50p"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_95p",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_95p",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_session_duration_95p"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_avg",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_avg",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_avg"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_50p",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_50p",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_50p"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_95p",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_95p",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_95p"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_99p",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_99p",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_response_time_99p"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_queue_size",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_queue_size",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_queue_size"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_http_responses",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_http_responses",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_http_responses"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_connections",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_connections",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_connections"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_health_checks",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_health_checks",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_health_checks"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/load_balancer/droplets_downtime",
+   "url": "/v2/monitoring/metrics/load_balancer/droplets_downtime",
+   "source_path": "/v2/monitoring/metrics/load_balancer/droplets_downtime"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet_autoscale/current_instances",
+   "url": "/v2/monitoring/metrics/droplet_autoscale/current_instances",
+   "source_path": "/v2/monitoring/metrics/droplet_autoscale/current_instances"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet_autoscale/target_instances",
+   "url": "/v2/monitoring/metrics/droplet_autoscale/target_instances",
+   "source_path": "/v2/monitoring/metrics/droplet_autoscale/target_instances"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet_autoscale/current_cpu_utilization",
+   "url": "/v2/monitoring/metrics/droplet_autoscale/current_cpu_utilization",
+   "source_path": "/v2/monitoring/metrics/droplet_autoscale/current_cpu_utilization"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet_autoscale/target_cpu_utilization",
+   "url": "/v2/monitoring/metrics/droplet_autoscale/target_cpu_utilization",
+   "source_path": "/v2/monitoring/metrics/droplet_autoscale/target_cpu_utilization"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet_autoscale/current_memory_utilization",
+   "url": "/v2/monitoring/metrics/droplet_autoscale/current_memory_utilization",
+   "source_path": "/v2/monitoring/metrics/droplet_autoscale/current_memory_utilization"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/droplet_autoscale/target_memory_utilization",
+   "url": "/v2/monitoring/metrics/droplet_autoscale/target_memory_utilization",
+   "source_path": "/v2/monitoring/metrics/droplet_autoscale/target_memory_utilization"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/cpu_usage",
+   "url": "/v2/monitoring/metrics/database/mysql/cpu_usage",
+   "source_path": "/v2/monitoring/metrics/database/mysql/cpu_usage"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/load",
+   "url": "/v2/monitoring/metrics/database/mysql/load",
+   "source_path": "/v2/monitoring/metrics/database/mysql/load"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/memory_usage",
+   "url": "/v2/monitoring/metrics/database/mysql/memory_usage",
+   "source_path": "/v2/monitoring/metrics/database/mysql/memory_usage"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/disk_usage",
+   "url": "/v2/monitoring/metrics/database/mysql/disk_usage",
+   "source_path": "/v2/monitoring/metrics/database/mysql/disk_usage"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/threads_connected",
+   "url": "/v2/monitoring/metrics/database/mysql/threads_connected",
+   "source_path": "/v2/monitoring/metrics/database/mysql/threads_connected"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/threads_created_rate",
+   "url": "/v2/monitoring/metrics/database/mysql/threads_created_rate",
+   "source_path": "/v2/monitoring/metrics/database/mysql/threads_created_rate"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/threads_active",
+   "url": "/v2/monitoring/metrics/database/mysql/threads_active",
+   "source_path": "/v2/monitoring/metrics/database/mysql/threads_active"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/index_vs_sequential_reads",
+   "url": "/v2/monitoring/metrics/database/mysql/index_vs_sequential_reads",
+   "source_path": "/v2/monitoring/metrics/database/mysql/index_vs_sequential_reads"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/op_rates",
+   "url": "/v2/monitoring/metrics/database/mysql/op_rates",
+   "source_path": "/v2/monitoring/metrics/database/mysql/op_rates"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/schema_throughput",
+   "url": "/v2/monitoring/metrics/database/mysql/schema_throughput",
+   "source_path": "/v2/monitoring/metrics/database/mysql/schema_throughput"
+  },
+  {
+   "rule": "/v2/monitoring/metrics/database/mysql/schema_latency",
+   "url": "/v2/monitoring/metrics/database/mysql/schema_latency",
+   "source_path": "/v2/monitoring/metrics/database/mysql/schema_latency"
+  },
+  {
+   "rule": "/v2/monitoring/sinks/destinations",
+   "url": "/v2/monitoring/sinks/destinations",
+   "source_path": "/v2/monitoring/sinks/destinations"
+  },
+  {
+   "rule": "/v2/monitoring/sinks/destinations/<destination_uuid>",
+   "url": "/v2/monitoring/sinks/destinations/v393",
+   "source_path": "/v2/monitoring/sinks/destinations/{destination_uuid}"
+  },
+  {
+   "rule": "/v2/monitoring/sinks",
+   "url": "/v2/monitoring/sinks",
+   "source_path": "/v2/monitoring/sinks"
+  },
+  {
+   "rule": "/v2/monitoring/sinks/<sink_uuid>",
+   "url": "/v2/monitoring/sinks/v395",
+   "source_path": "/v2/monitoring/sinks/{sink_uuid}"
+  },
+  {
+   "rule": "/v2/nfs",
+   "url": "/v2/nfs",
+   "source_path": "/v2/nfs"
+  },
+  {
+   "rule": "/v2/nfs/<nfs_id>",
+   "url": "/v2/nfs/v397",
+   "source_path": "/v2/nfs/{nfs_id}"
+  },
+  {
+   "rule": "/v2/nfs/<nfs_id>/actions",
+   "url": "/v2/nfs/v398/actions",
+   "source_path": "/v2/nfs/{nfs_id}/actions"
+  },
+  {
+   "rule": "/v2/nfs/snapshots",
+   "url": "/v2/nfs/snapshots",
+   "source_path": "/v2/nfs/snapshots"
+  },
+  {
+   "rule": "/v2/nfs/snapshots/<nfs_snapshot_id>",
+   "url": "/v2/nfs/snapshots/v400",
+   "source_path": "/v2/nfs/snapshots/{nfs_snapshot_id}"
+  },
+  {
+   "rule": "/v2/nfs/shares/<share_id>/access_points",
+   "url": "/v2/nfs/shares/v401/access_points",
+   "source_path": "/v2/nfs/shares/{share_id}/access_points"
+  },
+  {
+   "rule": "/v2/nfs/access_points/<access_point_id>",
+   "url": "/v2/nfs/access_points/v402",
+   "source_path": "/v2/nfs/access_points/{access_point_id}"
+  },
+  {
+   "rule": "/v2/organizations/team",
+   "url": "/v2/organizations/team",
+   "source_path": "/v2/organizations/team"
+  },
+  {
+   "rule": "/v2/organizations/teams",
+   "url": "/v2/organizations/teams",
+   "source_path": "/v2/organizations/teams"
+  },
+  {
+   "rule": "/v2/partner_network_connect/attachments",
+   "url": "/v2/partner_network_connect/attachments",
+   "source_path": "/v2/partner_network_connect/attachments"
+  },
+  {
+   "rule": "/v2/partner_network_connect/attachments/<pa_id>",
+   "url": "/v2/partner_network_connect/attachments/v406",
+   "source_path": "/v2/partner_network_connect/attachments/{pa_id}"
+  },
+  {
+   "rule": "/v2/partner_network_connect/attachments/<pa_id>/bgp_auth_key",
+   "url": "/v2/partner_network_connect/attachments/v407/bgp_auth_key",
+   "source_path": "/v2/partner_network_connect/attachments/{pa_id}/bgp_auth_key"
+  },
+  {
+   "rule": "/v2/partner_network_connect/attachments/<pa_id>/remote_routes",
+   "url": "/v2/partner_network_connect/attachments/v408/remote_routes",
+   "source_path": "/v2/partner_network_connect/attachments/{pa_id}/remote_routes"
+  },
+  {
+   "rule": "/v2/partner_network_connect/attachments/<pa_id>/service_key",
+   "url": "/v2/partner_network_connect/attachments/v409/service_key",
+   "source_path": "/v2/partner_network_connect/attachments/{pa_id}/service_key"
+  },
+  {
+   "rule": "/v2/projects",
+   "url": "/v2/projects",
+   "source_path": "/v2/projects"
+  },
+  {
+   "rule": "/v2/projects/default",
+   "url": "/v2/projects/default",
+   "source_path": "/v2/projects/default"
+  },
+  {
+   "rule": "/v2/projects/<project_id>",
+   "url": "/v2/projects/v412",
+   "source_path": "/v2/projects/{project_id}"
+  },
+  {
+   "rule": "/v2/projects/<project_id>/resources",
+   "url": "/v2/projects/v413/resources",
+   "source_path": "/v2/projects/{project_id}/resources"
+  },
+  {
+   "rule": "/v2/projects/default/resources",
+   "url": "/v2/projects/default/resources",
+   "source_path": "/v2/projects/default/resources"
+  },
+  {
+   "rule": "/v2/regions",
+   "url": "/v2/regions",
+   "source_path": "/v2/regions"
+  },
+  {
+   "rule": "/v2/registries",
+   "url": "/v2/registries",
+   "source_path": "/v2/registries"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>",
+   "url": "/v2/registries/v417",
+   "source_path": "/v2/registries/{registry_name}"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/docker-credentials",
+   "url": "/v2/registries/v418/docker-credentials",
+   "source_path": "/v2/registries/{registry_name}/docker-credentials"
+  },
+  {
+   "rule": "/v2/registries/subscription",
+   "url": "/v2/registries/subscription",
+   "source_path": "/v2/registries/subscription"
+  },
+  {
+   "rule": "/v2/registries/options",
+   "url": "/v2/registries/options",
+   "source_path": "/v2/registries/options"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/garbage-collection",
+   "url": "/v2/registries/v421/garbage-collection",
+   "source_path": "/v2/registries/{registry_name}/garbage-collection"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/garbage-collections",
+   "url": "/v2/registries/v422/garbage-collections",
+   "source_path": "/v2/registries/{registry_name}/garbage-collections"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/garbage-collection/<garbage_collection_uuid>",
+   "url": "/v2/registries/v423/garbage-collection/v423",
+   "source_path": "/v2/registries/{registry_name}/garbage-collection/{garbage_collection_uuid}"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/repositoriesV2",
+   "url": "/v2/registries/v424/repositoriesV2",
+   "source_path": "/v2/registries/{registry_name}/repositoriesV2"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/repositories/<repository_name>",
+   "url": "/v2/registries/v425/repositories/v425",
+   "source_path": "/v2/registries/{registry_name}/repositories/{repository_name}"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/repositories/<repository_name>/tags",
+   "url": "/v2/registries/v426/repositories/v426/tags",
+   "source_path": "/v2/registries/{registry_name}/repositories/{repository_name}/tags"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/repositories/<repository_name>/tags/<repository_tag>",
+   "url": "/v2/registries/v427/repositories/v427/tags/v427",
+   "source_path": "/v2/registries/{registry_name}/repositories/{repository_name}/tags/{repository_tag}"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/repositories/<repository_name>/digests",
+   "url": "/v2/registries/v428/repositories/v428/digests",
+   "source_path": "/v2/registries/{registry_name}/repositories/{repository_name}/digests"
+  },
+  {
+   "rule": "/v2/registries/<registry_name>/repositories/<repository_name>/digests/<manifest_digest>",
+   "url": "/v2/registries/v429/repositories/v429/digests/v429",
+   "source_path": "/v2/registries/{registry_name}/repositories/{repository_name}/digests/{manifest_digest}"
+  },
+  {
+   "rule": "/v2/registries/validate-name",
+   "url": "/v2/registries/validate-name",
+   "source_path": "/v2/registries/validate-name"
+  },
+  {
+   "rule": "/v2/registry",
+   "url": "/v2/registry",
+   "source_path": "/v2/registry"
+  },
+  {
+   "rule": "/v2/registry/subscription",
+   "url": "/v2/registry/subscription",
+   "source_path": "/v2/registry/subscription"
+  },
+  {
+   "rule": "/v2/registry/docker-credentials",
+   "url": "/v2/registry/docker-credentials",
+   "source_path": "/v2/registry/docker-credentials"
+  },
+  {
+   "rule": "/v2/registry/validate-name",
+   "url": "/v2/registry/validate-name",
+   "source_path": "/v2/registry/validate-name"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/repositories",
+   "url": "/v2/registry/v435/repositories",
+   "source_path": "/v2/registry/{registry_name}/repositories"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/repositoriesV2",
+   "url": "/v2/registry/v436/repositoriesV2",
+   "source_path": "/v2/registry/{registry_name}/repositoriesV2"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/repositories/<repository_name>/tags",
+   "url": "/v2/registry/v437/repositories/v437/tags",
+   "source_path": "/v2/registry/{registry_name}/repositories/{repository_name}/tags"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/repositories/<repository_name>/tags/<repository_tag>",
+   "url": "/v2/registry/v438/repositories/v438/tags/v438",
+   "source_path": "/v2/registry/{registry_name}/repositories/{repository_name}/tags/{repository_tag}"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/repositories/<repository_name>/digests",
+   "url": "/v2/registry/v439/repositories/v439/digests",
+   "source_path": "/v2/registry/{registry_name}/repositories/{repository_name}/digests"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/repositories/<repository_name>/digests/<manifest_digest>",
+   "url": "/v2/registry/v440/repositories/v440/digests/v440",
+   "source_path": "/v2/registry/{registry_name}/repositories/{repository_name}/digests/{manifest_digest}"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/garbage-collection",
+   "url": "/v2/registry/v441/garbage-collection",
+   "source_path": "/v2/registry/{registry_name}/garbage-collection"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/garbage-collections",
+   "url": "/v2/registry/v442/garbage-collections",
+   "source_path": "/v2/registry/{registry_name}/garbage-collections"
+  },
+  {
+   "rule": "/v2/registry/<registry_name>/garbage-collection/<garbage_collection_uuid>",
+   "url": "/v2/registry/v443/garbage-collection/v443",
+   "source_path": "/v2/registry/{registry_name}/garbage-collection/{garbage_collection_uuid}"
+  },
+  {
+   "rule": "/v2/registry/options",
+   "url": "/v2/registry/options",
+   "source_path": "/v2/registry/options"
+  },
+  {
+   "rule": "/v2/reports/droplet_neighbors_ids",
+   "url": "/v2/reports/droplet_neighbors_ids",
+   "source_path": "/v2/reports/droplet_neighbors_ids"
+  },
+  {
+   "rule": "/v2/reserved_ips",
+   "url": "/v2/reserved_ips",
+   "source_path": "/v2/reserved_ips"
+  },
+  {
+   "rule": "/v2/reserved_ips/<reserved_ip>",
+   "url": "/v2/reserved_ips/v447",
+   "source_path": "/v2/reserved_ips/{reserved_ip}"
+  },
+  {
+   "rule": "/v2/reserved_ips/<reserved_ip>/actions",
+   "url": "/v2/reserved_ips/v448/actions",
+   "source_path": "/v2/reserved_ips/{reserved_ip}/actions"
+  },
+  {
+   "rule": "/v2/reserved_ips/<reserved_ip>/actions/<action_id>",
+   "url": "/v2/reserved_ips/v449/actions/v449",
+   "source_path": "/v2/reserved_ips/{reserved_ip}/actions/{action_id}"
+  },
+  {
+   "rule": "/v2/reserved_ipv6",
+   "url": "/v2/reserved_ipv6",
+   "source_path": "/v2/reserved_ipv6"
+  },
+  {
+   "rule": "/v2/reserved_ipv6/<reserved_ipv6>",
+   "url": "/v2/reserved_ipv6/v451",
+   "source_path": "/v2/reserved_ipv6/{reserved_ipv6}"
+  },
+  {
+   "rule": "/v2/reserved_ipv6/<reserved_ipv6>/actions",
+   "url": "/v2/reserved_ipv6/v452/actions",
+   "source_path": "/v2/reserved_ipv6/{reserved_ipv6}/actions"
+  },
+  {
+   "rule": "/v2/byoip_prefixes",
+   "url": "/v2/byoip_prefixes",
+   "source_path": "/v2/byoip_prefixes"
+  },
+  {
+   "rule": "/v2/byoip_prefixes/<byoip_prefix_uuid>",
+   "url": "/v2/byoip_prefixes/v454",
+   "source_path": "/v2/byoip_prefixes/{byoip_prefix_uuid}"
+  },
+  {
+   "rule": "/v2/byoip_prefixes/<byoip_prefix_uuid>/ips",
+   "url": "/v2/byoip_prefixes/v455/ips",
+   "source_path": "/v2/byoip_prefixes/{byoip_prefix_uuid}/ips"
+  },
+  {
+   "rule": "/v2/security/scans",
+   "url": "/v2/security/scans",
+   "source_path": "/v2/security/scans"
+  },
+  {
+   "rule": "/v2/security/scans/<scan_id>",
+   "url": "/v2/security/scans/v457",
+   "source_path": "/v2/security/scans/{scan_id}"
+  },
+  {
+   "rule": "/v2/security/scans/latest",
+   "url": "/v2/security/scans/latest",
+   "source_path": "/v2/security/scans/latest"
+  },
+  {
+   "rule": "/v2/security/scans/rules",
+   "url": "/v2/security/scans/rules",
+   "source_path": "/v2/security/scans/rules"
+  },
+  {
+   "rule": "/v2/security/scans/<scan_id>/findings/<finding_uuid>/affected_resources",
+   "url": "/v2/security/scans/v460/findings/v460/affected_resources",
+   "source_path": "/v2/security/scans/{scan_id}/findings/{finding_uuid}/affected_resources"
+  },
+  {
+   "rule": "/v2/security/settings",
+   "url": "/v2/security/settings",
+   "source_path": "/v2/security/settings"
+  },
+  {
+   "rule": "/v2/security/settings/plan",
+   "url": "/v2/security/settings/plan",
+   "source_path": "/v2/security/settings/plan"
+  },
+  {
+   "rule": "/v2/security/settings/suppressions",
+   "url": "/v2/security/settings/suppressions",
+   "source_path": "/v2/security/settings/suppressions"
+  },
+  {
+   "rule": "/v2/security/settings/suppressions/<suppression_uuid>",
+   "url": "/v2/security/settings/suppressions/v464",
+   "source_path": "/v2/security/settings/suppressions/{suppression_uuid}"
+  },
+  {
+   "rule": "/v2/security/secrets",
+   "url": "/v2/security/secrets",
+   "source_path": "/v2/security/secrets"
+  },
+  {
+   "rule": "/v2/security/secrets/<secret>",
+   "url": "/v2/security/secrets/v466",
+   "source_path": "/v2/security/secrets/{secret}"
+  },
+  {
+   "rule": "/v2/security/secrets/<secret>/versions",
+   "url": "/v2/security/secrets/v467/versions",
+   "source_path": "/v2/security/secrets/{secret}/versions"
+  },
+  {
+   "rule": "/v2/security/secrets/<secret>/restore",
+   "url": "/v2/security/secrets/v468/restore",
+   "source_path": "/v2/security/secrets/{secret}/restore"
+  },
+  {
+   "rule": "/v2/sizes",
+   "url": "/v2/sizes",
+   "source_path": "/v2/sizes"
+  },
+  {
+   "rule": "/v2/snapshots",
+   "url": "/v2/snapshots",
+   "source_path": "/v2/snapshots"
+  },
+  {
+   "rule": "/v2/snapshots/<snapshot_id>",
+   "url": "/v2/snapshots/v471",
+   "source_path": "/v2/snapshots/{snapshot_id}"
+  },
+  {
+   "rule": "/v2/snapshots/<snapshot_id>/regions/<region>",
+   "url": "/v2/snapshots/v472/regions/v472",
+   "source_path": "/v2/snapshots/{snapshot_id}/regions/{region}"
+  },
+  {
+   "rule": "/v2/spaces/keys",
+   "url": "/v2/spaces/keys",
+   "source_path": "/v2/spaces/keys"
+  },
+  {
+   "rule": "/v2/spaces/keys/<access_key>",
+   "url": "/v2/spaces/keys/v474",
+   "source_path": "/v2/spaces/keys/{access_key}"
+  },
+  {
+   "rule": "/v2/tags",
+   "url": "/v2/tags",
+   "source_path": "/v2/tags"
+  },
+  {
+   "rule": "/v2/tags/<tag_id>",
+   "url": "/v2/tags/v476",
+   "source_path": "/v2/tags/{tag_id}"
+  },
+  {
+   "rule": "/v2/tags/<tag_id>/resources",
+   "url": "/v2/tags/v477/resources",
+   "source_path": "/v2/tags/{tag_id}/resources"
+  },
+  {
+   "rule": "/v2/vector-databases",
+   "url": "/v2/vector-databases",
+   "source_path": "/v2/vector-databases"
+  },
+  {
+   "rule": "/v2/vector-databases/<id>",
+   "url": "/v2/vector-databases/v479",
+   "source_path": "/v2/vector-databases/{id}"
+  },
+  {
+   "rule": "/v2/vector-databases/<id>/backups",
+   "url": "/v2/vector-databases/v480/backups",
+   "source_path": "/v2/vector-databases/{id}/backups"
+  },
+  {
+   "rule": "/v2/vector-databases/<id>/backups/<backup_id>/restore",
+   "url": "/v2/vector-databases/v481/backups/v481/restore",
+   "source_path": "/v2/vector-databases/{id}/backups/{backup_id}/restore"
+  },
+  {
+   "rule": "/v2/vector-databases/<id>/credentials",
+   "url": "/v2/vector-databases/v482/credentials",
+   "source_path": "/v2/vector-databases/{id}/credentials"
+  },
+  {
+   "rule": "/v2/vector-databases/<id>/resize",
+   "url": "/v2/vector-databases/v483/resize",
+   "source_path": "/v2/vector-databases/{id}/resize"
+  },
+  {
+   "rule": "/v2/vector-databases/<id>/tags",
+   "url": "/v2/vector-databases/v484/tags",
+   "source_path": "/v2/vector-databases/{id}/tags"
+  },
+  {
+   "rule": "/v2/volumes",
+   "url": "/v2/volumes",
+   "source_path": "/v2/volumes"
+  },
+  {
+   "rule": "/v2/volumes/actions",
+   "url": "/v2/volumes/actions",
+   "source_path": "/v2/volumes/actions"
+  },
+  {
+   "rule": "/v2/volumes/snapshots/<snapshot_id>",
+   "url": "/v2/volumes/snapshots/v487",
+   "source_path": "/v2/volumes/snapshots/{snapshot_id}"
+  },
+  {
+   "rule": "/v2/volumes/<volume_id>",
+   "url": "/v2/volumes/v488",
+   "source_path": "/v2/volumes/{volume_id}"
+  },
+  {
+   "rule": "/v2/volumes/<volume_id>/actions",
+   "url": "/v2/volumes/v489/actions",
+   "source_path": "/v2/volumes/{volume_id}/actions"
+  },
+  {
+   "rule": "/v2/volumes/<volume_id>/actions/<action_id>",
+   "url": "/v2/volumes/v490/actions/v490",
+   "source_path": "/v2/volumes/{volume_id}/actions/{action_id}"
+  },
+  {
+   "rule": "/v2/volumes/<volume_id>/snapshots",
+   "url": "/v2/volumes/v491/snapshots",
+   "source_path": "/v2/volumes/{volume_id}/snapshots"
+  },
+  {
+   "rule": "/v2/vpcs",
+   "url": "/v2/vpcs",
+   "source_path": "/v2/vpcs"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_id>",
+   "url": "/v2/vpcs/v493",
+   "source_path": "/v2/vpcs/{vpc_id}"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_id>/members",
+   "url": "/v2/vpcs/v494/members",
+   "source_path": "/v2/vpcs/{vpc_id}/members"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_id>/peerings",
+   "url": "/v2/vpcs/v495/peerings",
+   "source_path": "/v2/vpcs/{vpc_id}/peerings"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_id>/peerings/<vpc_peering_id>",
+   "url": "/v2/vpcs/v496/peerings/v496",
+   "source_path": "/v2/vpcs/{vpc_id}/peerings/{vpc_peering_id}"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_uuid>/routes",
+   "url": "/v2/vpcs/v497/routes",
+   "source_path": "/v2/vpcs/{vpc_uuid}/routes"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_uuid>/subnets",
+   "url": "/v2/vpcs/v498/subnets",
+   "source_path": "/v2/vpcs/{vpc_uuid}/subnets"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_uuid>/subnets/<subnet_uuid>",
+   "url": "/v2/vpcs/v499/subnets/v499",
+   "source_path": "/v2/vpcs/{vpc_uuid}/subnets/{subnet_uuid}"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_uuid>/subnets/<subnet_uuid>/members",
+   "url": "/v2/vpcs/v500/subnets/v500/members",
+   "source_path": "/v2/vpcs/{vpc_uuid}/subnets/{subnet_uuid}/members"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_uuid>/subnets/<subnet_uuid>/routes",
+   "url": "/v2/vpcs/v501/subnets/v501/routes",
+   "source_path": "/v2/vpcs/{vpc_uuid}/subnets/{subnet_uuid}/routes"
+  },
+  {
+   "rule": "/v2/vpcs/<vpc_uuid>/subnets/<subnet_uuid>/routes/<route_uuid>",
+   "url": "/v2/vpcs/v502/subnets/v502/routes/v502",
+   "source_path": "/v2/vpcs/{vpc_uuid}/subnets/{subnet_uuid}/routes/{route_uuid}"
+  },
+  {
+   "rule": "/v2/vpc_peerings",
+   "url": "/v2/vpc_peerings",
+   "source_path": "/v2/vpc_peerings"
+  },
+  {
+   "rule": "/v2/vpc_peerings/<vpc_peering_id>",
+   "url": "/v2/vpc_peerings/v504",
+   "source_path": "/v2/vpc_peerings/{vpc_peering_id}"
+  },
+  {
+   "rule": "/v2/vpc_nat_gateways",
+   "url": "/v2/vpc_nat_gateways",
+   "source_path": "/v2/vpc_nat_gateways"
+  },
+  {
+   "rule": "/v2/vpc_nat_gateways/<id>",
+   "url": "/v2/vpc_nat_gateways/v506",
+   "source_path": "/v2/vpc_nat_gateways/{id}"
+  },
+  {
+   "rule": "/v2/uptime/checks",
+   "url": "/v2/uptime/checks",
+   "source_path": "/v2/uptime/checks"
+  },
+  {
+   "rule": "/v2/uptime/checks/<check_id>",
+   "url": "/v2/uptime/checks/v508",
+   "source_path": "/v2/uptime/checks/{check_id}"
+  },
+  {
+   "rule": "/v2/uptime/checks/<check_id>/state",
+   "url": "/v2/uptime/checks/v509/state",
+   "source_path": "/v2/uptime/checks/{check_id}/state"
+  },
+  {
+   "rule": "/v2/uptime/checks/<check_id>/alerts",
+   "url": "/v2/uptime/checks/v510/alerts",
+   "source_path": "/v2/uptime/checks/{check_id}/alerts"
+  },
+  {
+   "rule": "/v2/uptime/checks/<check_id>/alerts/<alert_id>",
+   "url": "/v2/uptime/checks/v511/alerts/v511",
+   "source_path": "/v2/uptime/checks/{check_id}/alerts/{alert_id}"
+  },
+  {
+   "rule": "/v2/gen-ai/agents",
+   "url": "/v2/gen-ai/agents",
+   "source_path": "/v2/gen-ai/agents"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/api_keys",
+   "url": "/v2/gen-ai/agents/v513/api_keys",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/api_keys"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/api_keys/<api_key_uuid>",
+   "url": "/v2/gen-ai/agents/v514/api_keys/v514",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/api_keys/{api_key_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/api_keys/<api_key_uuid>/regenerate",
+   "url": "/v2/gen-ai/agents/v515/api_keys/v515/regenerate",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/api_keys/{api_key_uuid}/regenerate"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/functions",
+   "url": "/v2/gen-ai/agents/v516/functions",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/functions"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/functions/<function_uuid>",
+   "url": "/v2/gen-ai/agents/v517/functions/v517",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/functions/{function_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/guardrails",
+   "url": "/v2/gen-ai/agents/v518/guardrails",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/guardrails"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/guardrails/<guardrail_uuid>",
+   "url": "/v2/gen-ai/agents/v519/guardrails/v519",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/guardrails/{guardrail_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/knowledge_bases",
+   "url": "/v2/gen-ai/agents/v520/knowledge_bases",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/knowledge_bases"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<agent_uuid>/knowledge_bases/<knowledge_base_uuid>",
+   "url": "/v2/gen-ai/agents/v521/knowledge_bases/v521",
+   "source_path": "/v2/gen-ai/agents/{agent_uuid}/knowledge_bases/{knowledge_base_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<parent_agent_uuid>/child_agents/<child_agent_uuid>",
+   "url": "/v2/gen-ai/agents/v522/child_agents/v522",
+   "source_path": "/v2/gen-ai/agents/{parent_agent_uuid}/child_agents/{child_agent_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<uuid>",
+   "url": "/v2/gen-ai/agents/v523",
+   "source_path": "/v2/gen-ai/agents/{uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<uuid>/child_agents",
+   "url": "/v2/gen-ai/agents/v524/child_agents",
+   "source_path": "/v2/gen-ai/agents/{uuid}/child_agents"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<uuid>/deployment_visibility",
+   "url": "/v2/gen-ai/agents/v525/deployment_visibility",
+   "source_path": "/v2/gen-ai/agents/{uuid}/deployment_visibility"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<uuid>/usage",
+   "url": "/v2/gen-ai/agents/v526/usage",
+   "source_path": "/v2/gen-ai/agents/{uuid}/usage"
+  },
+  {
+   "rule": "/v2/gen-ai/agents/<uuid>/versions",
+   "url": "/v2/gen-ai/agents/v527/versions",
+   "source_path": "/v2/gen-ai/agents/{uuid}/versions"
+  },
+  {
+   "rule": "/v2/gen-ai/anthropic/keys",
+   "url": "/v2/gen-ai/anthropic/keys",
+   "source_path": "/v2/gen-ai/anthropic/keys"
+  },
+  {
+   "rule": "/v2/gen-ai/anthropic/keys/<api_key_uuid>",
+   "url": "/v2/gen-ai/anthropic/keys/v529",
+   "source_path": "/v2/gen-ai/anthropic/keys/{api_key_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/anthropic/keys/<uuid>/agents",
+   "url": "/v2/gen-ai/anthropic/keys/v530/agents",
+   "source_path": "/v2/gen-ai/anthropic/keys/{uuid}/agents"
+  },
+  {
+   "rule": "/v2/gen-ai/custom_models",
+   "url": "/v2/gen-ai/custom_models",
+   "source_path": "/v2/gen-ai/custom_models"
+  },
+  {
+   "rule": "/v2/gen-ai/custom_models/import",
+   "url": "/v2/gen-ai/custom_models/import",
+   "source_path": "/v2/gen-ai/custom_models/import"
+  },
+  {
+   "rule": "/v2/gen-ai/custom_models/<uuid>",
+   "url": "/v2/gen-ai/custom_models/v533",
+   "source_path": "/v2/gen-ai/custom_models/{uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/custom_models/<uuid>/metadata",
+   "url": "/v2/gen-ai/custom_models/v534/metadata",
+   "source_path": "/v2/gen-ai/custom_models/{uuid}/metadata"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_datasets",
+   "url": "/v2/gen-ai/evaluation_datasets",
+   "source_path": "/v2/gen-ai/evaluation_datasets"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_datasets/file_upload_presigned_urls",
+   "url": "/v2/gen-ai/evaluation_datasets/file_upload_presigned_urls",
+   "source_path": "/v2/gen-ai/evaluation_datasets/file_upload_presigned_urls"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_datasets/<dataset_uuid>",
+   "url": "/v2/gen-ai/evaluation_datasets/v537",
+   "source_path": "/v2/gen-ai/evaluation_datasets/{dataset_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_datasets/<dataset_uuid>/download_url",
+   "url": "/v2/gen-ai/evaluation_datasets/v538/download_url",
+   "source_path": "/v2/gen-ai/evaluation_datasets/{dataset_uuid}/download_url"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_metrics",
+   "url": "/v2/gen-ai/evaluation_metrics",
+   "source_path": "/v2/gen-ai/evaluation_metrics"
+  },
+  {
+   "rule": "/v2/gen-ai/custom_evaluation_metrics",
+   "url": "/v2/gen-ai/custom_evaluation_metrics",
+   "source_path": "/v2/gen-ai/custom_evaluation_metrics"
+  },
+  {
+   "rule": "/v2/gen-ai/custom_evaluation_metrics/<metric_uuid>",
+   "url": "/v2/gen-ai/custom_evaluation_metrics/v541",
+   "source_path": "/v2/gen-ai/custom_evaluation_metrics/{metric_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_runs",
+   "url": "/v2/gen-ai/evaluation_runs",
+   "source_path": "/v2/gen-ai/evaluation_runs"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_runs/<evaluation_run_uuid>",
+   "url": "/v2/gen-ai/evaluation_runs/v543",
+   "source_path": "/v2/gen-ai/evaluation_runs/{evaluation_run_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_runs/<evaluation_run_uuid>/results",
+   "url": "/v2/gen-ai/evaluation_runs/v544/results",
+   "source_path": "/v2/gen-ai/evaluation_runs/{evaluation_run_uuid}/results"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_runs/<evaluation_run_uuid>/results/<prompt_id>",
+   "url": "/v2/gen-ai/evaluation_runs/v545/results/v545",
+   "source_path": "/v2/gen-ai/evaluation_runs/{evaluation_run_uuid}/results/{prompt_id}"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_test_cases",
+   "url": "/v2/gen-ai/evaluation_test_cases",
+   "source_path": "/v2/gen-ai/evaluation_test_cases"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_test_cases/<evaluation_test_case_uuid>/evaluation_runs",
+   "url": "/v2/gen-ai/evaluation_test_cases/v547/evaluation_runs",
+   "source_path": "/v2/gen-ai/evaluation_test_cases/{evaluation_test_case_uuid}/evaluation_runs"
+  },
+  {
+   "rule": "/v2/gen-ai/evaluation_test_cases/<test_case_uuid>",
+   "url": "/v2/gen-ai/evaluation_test_cases/v548",
+   "source_path": "/v2/gen-ai/evaluation_test_cases/{test_case_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/indexing_jobs",
+   "url": "/v2/gen-ai/indexing_jobs",
+   "source_path": "/v2/gen-ai/indexing_jobs"
+  },
+  {
+   "rule": "/v2/gen-ai/indexing_jobs/<indexing_job_uuid>/data_sources",
+   "url": "/v2/gen-ai/indexing_jobs/v550/data_sources",
+   "source_path": "/v2/gen-ai/indexing_jobs/{indexing_job_uuid}/data_sources"
+  },
+  {
+   "rule": "/v2/gen-ai/indexing_jobs/<indexing_job_uuid>/details_signed_url",
+   "url": "/v2/gen-ai/indexing_jobs/v551/details_signed_url",
+   "source_path": "/v2/gen-ai/indexing_jobs/{indexing_job_uuid}/details_signed_url"
+  },
+  {
+   "rule": "/v2/gen-ai/indexing_jobs/<uuid>",
+   "url": "/v2/gen-ai/indexing_jobs/v552",
+   "source_path": "/v2/gen-ai/indexing_jobs/{uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/indexing_jobs/<uuid>/cancel",
+   "url": "/v2/gen-ai/indexing_jobs/v553/cancel",
+   "source_path": "/v2/gen-ai/indexing_jobs/{uuid}/cancel"
+  },
+  {
+   "rule": "/v2/gen-ai/knowledge_bases",
+   "url": "/v2/gen-ai/knowledge_bases",
+   "source_path": "/v2/gen-ai/knowledge_bases"
+  },
+  {
+   "rule": "/v2/gen-ai/knowledge_bases/data_sources/file_upload_presigned_urls",
+   "url": "/v2/gen-ai/knowledge_bases/data_sources/file_upload_presigned_urls",
+   "source_path": "/v2/gen-ai/knowledge_bases/data_sources/file_upload_presigned_urls"
+  },
+  {
+   "rule": "/v2/gen-ai/knowledge_bases/<knowledge_base_uuid>/data_sources",
+   "url": "/v2/gen-ai/knowledge_bases/v556/data_sources",
+   "source_path": "/v2/gen-ai/knowledge_bases/{knowledge_base_uuid}/data_sources"
+  },
+  {
+   "rule": "/v2/gen-ai/knowledge_bases/<knowledge_base_uuid>/data_sources/<data_source_uuid>",
+   "url": "/v2/gen-ai/knowledge_bases/v557/data_sources/v557",
+   "source_path": "/v2/gen-ai/knowledge_bases/{knowledge_base_uuid}/data_sources/{data_source_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/knowledge_bases/<knowledge_base_uuid>/indexing_jobs",
+   "url": "/v2/gen-ai/knowledge_bases/v558/indexing_jobs",
+   "source_path": "/v2/gen-ai/knowledge_bases/{knowledge_base_uuid}/indexing_jobs"
+  },
+  {
+   "rule": "/v2/gen-ai/knowledge_bases/<uuid>",
+   "url": "/v2/gen-ai/knowledge_bases/v559",
+   "source_path": "/v2/gen-ai/knowledge_bases/{uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation/datasets/file_upload_presigned_urls",
+   "url": "/v2/gen-ai/model_evaluation/datasets/file_upload_presigned_urls",
+   "source_path": "/v2/gen-ai/model_evaluation/datasets/file_upload_presigned_urls"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation_metrics",
+   "url": "/v2/gen-ai/model_evaluation_metrics",
+   "source_path": "/v2/gen-ai/model_evaluation_metrics"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation_presets",
+   "url": "/v2/gen-ai/model_evaluation_presets",
+   "source_path": "/v2/gen-ai/model_evaluation_presets"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation_presets/<eval_preset_uuid>",
+   "url": "/v2/gen-ai/model_evaluation_presets/v563",
+   "source_path": "/v2/gen-ai/model_evaluation_presets/{eval_preset_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation_runs",
+   "url": "/v2/gen-ai/model_evaluation_runs",
+   "source_path": "/v2/gen-ai/model_evaluation_runs"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation_runs/<eval_run_uuid>",
+   "url": "/v2/gen-ai/model_evaluation_runs/v565",
+   "source_path": "/v2/gen-ai/model_evaluation_runs/{eval_run_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation_runs/<eval_run_uuid>/cancel",
+   "url": "/v2/gen-ai/model_evaluation_runs/v566/cancel",
+   "source_path": "/v2/gen-ai/model_evaluation_runs/{eval_run_uuid}/cancel"
+  },
+  {
+   "rule": "/v2/gen-ai/model_evaluation_runs/<eval_run_uuid>/results/download_url",
+   "url": "/v2/gen-ai/model_evaluation_runs/v567/results/download_url",
+   "source_path": "/v2/gen-ai/model_evaluation_runs/{eval_run_uuid}/results/download_url"
+  },
+  {
+   "rule": "/v2/gen-ai/models",
+   "url": "/v2/gen-ai/models",
+   "source_path": "/v2/gen-ai/models"
+  },
+  {
+   "rule": "/v2/gen-ai/models/api_keys",
+   "url": "/v2/gen-ai/models/api_keys",
+   "source_path": "/v2/gen-ai/models/api_keys"
+  },
+  {
+   "rule": "/v2/gen-ai/models/api_keys/<api_key_uuid>",
+   "url": "/v2/gen-ai/models/api_keys/v570",
+   "source_path": "/v2/gen-ai/models/api_keys/{api_key_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/models/api_keys/<api_key_uuid>/regenerate",
+   "url": "/v2/gen-ai/models/api_keys/v571/regenerate",
+   "source_path": "/v2/gen-ai/models/api_keys/{api_key_uuid}/regenerate"
+  },
+  {
+   "rule": "/v2/gen-ai/models/catalog",
+   "url": "/v2/gen-ai/models/catalog",
+   "source_path": "/v2/gen-ai/models/catalog"
+  },
+  {
+   "rule": "/v2/gen-ai/models/catalog/<id>",
+   "url": "/v2/gen-ai/models/catalog/v573",
+   "source_path": "/v2/gen-ai/models/catalog/{id}"
+  },
+  {
+   "rule": "/v2/gen-ai/models/catalog_v2",
+   "url": "/v2/gen-ai/models/catalog_v2",
+   "source_path": "/v2/gen-ai/models/catalog_v2"
+  },
+  {
+   "rule": "/v2/gen-ai/models/catalog_v2/<id>",
+   "url": "/v2/gen-ai/models/catalog_v2/v575",
+   "source_path": "/v2/gen-ai/models/catalog_v2/{id}"
+  },
+  {
+   "rule": "/v2/gen-ai/models/routers",
+   "url": "/v2/gen-ai/models/routers",
+   "source_path": "/v2/gen-ai/models/routers"
+  },
+  {
+   "rule": "/v2/gen-ai/models/routers/presets",
+   "url": "/v2/gen-ai/models/routers/presets",
+   "source_path": "/v2/gen-ai/models/routers/presets"
+  },
+  {
+   "rule": "/v2/gen-ai/models/routers/tasks/presets",
+   "url": "/v2/gen-ai/models/routers/tasks/presets",
+   "source_path": "/v2/gen-ai/models/routers/tasks/presets"
+  },
+  {
+   "rule": "/v2/gen-ai/models/routers/<uuid>",
+   "url": "/v2/gen-ai/models/routers/v579",
+   "source_path": "/v2/gen-ai/models/routers/{uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/oauth2/dropbox/tokens",
+   "url": "/v2/gen-ai/oauth2/dropbox/tokens",
+   "source_path": "/v2/gen-ai/oauth2/dropbox/tokens"
+  },
+  {
+   "rule": "/v2/gen-ai/oauth2/url",
+   "url": "/v2/gen-ai/oauth2/url",
+   "source_path": "/v2/gen-ai/oauth2/url"
+  },
+  {
+   "rule": "/v2/gen-ai/openai/keys",
+   "url": "/v2/gen-ai/openai/keys",
+   "source_path": "/v2/gen-ai/openai/keys"
+  },
+  {
+   "rule": "/v2/gen-ai/openai/keys/<api_key_uuid>",
+   "url": "/v2/gen-ai/openai/keys/v583",
+   "source_path": "/v2/gen-ai/openai/keys/{api_key_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/openai/keys/<uuid>/agents",
+   "url": "/v2/gen-ai/openai/keys/v584/agents",
+   "source_path": "/v2/gen-ai/openai/keys/{uuid}/agents"
+  },
+  {
+   "rule": "/v2/gen-ai/regions",
+   "url": "/v2/gen-ai/regions",
+   "source_path": "/v2/gen-ai/regions"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_library",
+   "url": "/v2/gen-ai/scenario_library",
+   "source_path": "/v2/gen-ai/scenario_library"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_library/<library_scenario_uuid>/create_scenario_set",
+   "url": "/v2/gen-ai/scenario_library/v587/create_scenario_set",
+   "source_path": "/v2/gen-ai/scenario_library/{library_scenario_uuid}/create_scenario_set"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_library/<library_scenario_uuid>/scenarios",
+   "url": "/v2/gen-ai/scenario_library/v588/scenarios",
+   "source_path": "/v2/gen-ai/scenario_library/{library_scenario_uuid}/scenarios"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_sets",
+   "url": "/v2/gen-ai/scenario_sets",
+   "source_path": "/v2/gen-ai/scenario_sets"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_sets/file_upload_presigned_urls",
+   "url": "/v2/gen-ai/scenario_sets/file_upload_presigned_urls",
+   "source_path": "/v2/gen-ai/scenario_sets/file_upload_presigned_urls"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_sets/generate",
+   "url": "/v2/gen-ai/scenario_sets/generate",
+   "source_path": "/v2/gen-ai/scenario_sets/generate"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_sets/<scenario_set_uuid>",
+   "url": "/v2/gen-ai/scenario_sets/v592",
+   "source_path": "/v2/gen-ai/scenario_sets/{scenario_set_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_sets/<scenario_set_uuid>/download_url",
+   "url": "/v2/gen-ai/scenario_sets/v593/download_url",
+   "source_path": "/v2/gen-ai/scenario_sets/{scenario_set_uuid}/download_url"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_sets/<scenario_set_uuid>/duplicate",
+   "url": "/v2/gen-ai/scenario_sets/v594/duplicate",
+   "source_path": "/v2/gen-ai/scenario_sets/{scenario_set_uuid}/duplicate"
+  },
+  {
+   "rule": "/v2/gen-ai/scenario_sets/<scenario_set_uuid>/scenarios",
+   "url": "/v2/gen-ai/scenario_sets/v595/scenarios",
+   "source_path": "/v2/gen-ai/scenario_sets/{scenario_set_uuid}/scenarios"
+  },
+  {
+   "rule": "/v2/gen-ai/scheduled-indexing",
+   "url": "/v2/gen-ai/scheduled-indexing",
+   "source_path": "/v2/gen-ai/scheduled-indexing"
+  },
+  {
+   "rule": "/v2/gen-ai/scheduled-indexing/knowledge-base/<knowledge_base_uuid>",
+   "url": "/v2/gen-ai/scheduled-indexing/knowledge-base/v597",
+   "source_path": "/v2/gen-ai/scheduled-indexing/knowledge-base/{knowledge_base_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/scheduled-indexing/<uuid>",
+   "url": "/v2/gen-ai/scheduled-indexing/v598",
+   "source_path": "/v2/gen-ai/scheduled-indexing/{uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/simulation_runs",
+   "url": "/v2/gen-ai/simulation_runs",
+   "source_path": "/v2/gen-ai/simulation_runs"
+  },
+  {
+   "rule": "/v2/gen-ai/simulation_runs/<run_uuid>",
+   "url": "/v2/gen-ai/simulation_runs/v600",
+   "source_path": "/v2/gen-ai/simulation_runs/{run_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/simulation_runs/<run_uuid>/cancel",
+   "url": "/v2/gen-ai/simulation_runs/v601/cancel",
+   "source_path": "/v2/gen-ai/simulation_runs/{run_uuid}/cancel"
+  },
+  {
+   "rule": "/v2/gen-ai/simulation_runs/<run_uuid>/episodes",
+   "url": "/v2/gen-ai/simulation_runs/v602/episodes",
+   "source_path": "/v2/gen-ai/simulation_runs/{run_uuid}/episodes"
+  },
+  {
+   "rule": "/v2/gen-ai/simulation_runs/<run_uuid>/episodes/<episode_uuid>",
+   "url": "/v2/gen-ai/simulation_runs/v603/episodes/v603",
+   "source_path": "/v2/gen-ai/simulation_runs/{run_uuid}/episodes/{episode_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/simulation_runs/<run_uuid>/episodes/<episode_uuid>/trajectory",
+   "url": "/v2/gen-ai/simulation_runs/v604/episodes/v604/trajectory",
+   "source_path": "/v2/gen-ai/simulation_runs/{run_uuid}/episodes/{episode_uuid}/trajectory"
+  },
+  {
+   "rule": "/v2/gen-ai/simulation_runs/<run_uuid>/episodes/<episode_uuid>/trajectory_url",
+   "url": "/v2/gen-ai/simulation_runs/v605/episodes/v605/trajectory_url",
+   "source_path": "/v2/gen-ai/simulation_runs/{run_uuid}/episodes/{episode_uuid}/trajectory_url"
+  },
+  {
+   "rule": "/v2/gen-ai/workspaces",
+   "url": "/v2/gen-ai/workspaces",
+   "source_path": "/v2/gen-ai/workspaces"
+  },
+  {
+   "rule": "/v2/gen-ai/workspaces/<workspace_uuid>",
+   "url": "/v2/gen-ai/workspaces/v607",
+   "source_path": "/v2/gen-ai/workspaces/{workspace_uuid}"
+  },
+  {
+   "rule": "/v2/gen-ai/workspaces/<workspace_uuid>/agents",
+   "url": "/v2/gen-ai/workspaces/v608/agents",
+   "source_path": "/v2/gen-ai/workspaces/{workspace_uuid}/agents"
+  },
+  {
+   "rule": "/v2/gen-ai/workspaces/<workspace_uuid>/evaluation_test_cases",
+   "url": "/v2/gen-ai/workspaces/v609/evaluation_test_cases",
+   "source_path": "/v2/gen-ai/workspaces/{workspace_uuid}/evaluation_test_cases"
+  },
+  {
+   "rule": "/v1/chat/completions",
+   "url": "/v1/chat/completions",
+   "source_path": "/v1/chat/completions"
+  },
+  {
+   "rule": "/v1/messages",
+   "url": "/v1/messages",
+   "source_path": "/v1/messages"
+  },
+  {
+   "rule": "/v1/embeddings",
+   "url": "/v1/embeddings",
+   "source_path": "/v1/embeddings"
+  },
+  {
+   "rule": "/api/v1/chat/completions",
+   "url": "/api/v1/chat/completions",
+   "source_path": "/api/v1/chat/completions"
+  },
+  {
+   "rule": "/v1/images/generations",
+   "url": "/v1/images/generations",
+   "source_path": "/v1/images/generations"
+  },
+  {
+   "rule": "/v1/models",
+   "url": "/v1/models",
+   "source_path": "/v1/models"
+  },
+  {
+   "rule": "/v1/systemone",
+   "url": "/v1/systemone",
+   "source_path": "/v1/systemone"
+  },
+  {
+   "rule": "/v1/responses",
+   "url": "/v1/responses",
+   "source_path": "/v1/responses"
+  },
+  {
+   "rule": "/v1/async-invoke",
+   "url": "/v1/async-invoke",
+   "source_path": "/v1/async-invoke"
+  },
+  {
+   "rule": "/v1/audio/speech",
+   "url": "/v1/audio/speech",
+   "source_path": "/v1/audio/speech"
+  },
+  {
+   "rule": "/v1/videos",
+   "url": "/v1/videos",
+   "source_path": "/v1/videos"
+  },
+  {
+   "rule": "/v1/videos/<video_id>",
+   "url": "/v1/videos/v621",
+   "source_path": "/v1/videos/{video_id}"
+  },
+  {
+   "rule": "/v1/videos/<video_id>/content",
+   "url": "/v1/videos/v622/content",
+   "source_path": "/v1/videos/{video_id}/content"
+  },
+  {
+   "rule": "/v1/batches/files",
+   "url": "/v1/batches/files",
+   "source_path": "/v1/batches/files"
+  },
+  {
+   "rule": "/v1/batches",
+   "url": "/v1/batches",
+   "source_path": "/v1/batches"
+  },
+  {
+   "rule": "/v1/batches/<batch_id>",
+   "url": "/v1/batches/v625",
+   "source_path": "/v1/batches/{batch_id}"
+  },
+  {
+   "rule": "/v1/batches/<batch_id>/results",
+   "url": "/v1/batches/v626/results",
+   "source_path": "/v1/batches/{batch_id}/results"
+  },
+  {
+   "rule": "/v1/batches/<batch_id>/cancel",
+   "url": "/v1/batches/v627/cancel",
+   "source_path": "/v1/batches/{batch_id}/cancel"
+  }
+ ]
+}
