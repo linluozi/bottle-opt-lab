@@ -61,7 +61,7 @@ $ python3 tests/test_lazy.py
 | G3 中位加速 ≥1.15x | ✅ 三个合成规模登记加速比中位 **32.76x**（2.43 / 190.22 / 32.76）；端到端就绪中位 **20.78x** | `python3 benchmark/bench.py --impl {baseline,optimized} ...` |
 | G3b 真实语料 ≥1.15x | ✅ **147.64x** 端到端就绪；登记 **156.05x**（628 条真实 OpenAPI 路径） | 同上，读 `real_digitalocean` |
 | G4 最大规模不退化 | ✅ 2,000 条：登记 **32.76x**，就绪 **20.78x**；稳态 match **0.995x** | 同上，读 `synthetic_2000` |
-| G5 峰值 RSS ≤1.10x | ✅ **0.849x**（基线 33,996 KB → 优化 28,864 KB，3 进程各 3 次的中位） | `python3 benchmark/memcheck.py` |
+| G5 峰值 RSS ≤1.10x | ✅ **0.849x**（基线 33,996 KB → 优化 28,864 KB，3 进程各 3 次的中位；独立复跑 0.862x） | `python3 benchmark/memcheck.py` |
 
 **G1 复现**（不改本仓库；`git` 用于反向还原基线）：
 
@@ -76,6 +76,8 @@ git apply --check /path/to/bottle-opt-lab/patch.diff && git apply /path/to/bottl
 **G5 复现**：`python3 benchmark/memcheck.py` 会各起 3 个新进程，对 2,000 条路由登记 + 200 次 match 取 `ru_maxrss` 高水位；结果写 `benchmark/memcheck.json`。
 
 **噪声披露**：优化后真实语料登记只有 7.6 ms，5 个样本的 rel_sd 为 **77.0%**（基线 0.33%）；合成 100 条优化后 rel_sd 20.1%（1.1 ms 窗口）。这是 4 vCPU 共享主机上的进程级抖动与小窗口效应，不是加速比来源；即便按 p25/p75 的极端组合计算，真实语料仍 >100x。合成 500/2,000 的优化后 rel_sd 分别为 5.7% / 3.8%，基线均 <0.7%。表中全部取中位，不取最快值，warmup 不计入计时。所有数字来自 `benchmark/baseline.json`、`benchmark/optimized.json` 与 `benchmark/raw/` 的 64 个原始样本。
+
+**独立复跑**：第二轮完整 `bench.py`（`benchmark/replication.json`）得到登记加速比 2.24 / 186.06 / 32.47 / 146.03x、就绪 2.15 / 173.63 / 19.98 / 140.90x（顺序同表：100 / 500 / 2,000 / 真实）；只读 verifier 的第三轮得到登记 2.55 / 194.63 / 34.11 / 160.75x、就绪 2.45 / 185.75 / 20.85 / 156.28x，G5 RSS 比值 0.862x。三轮的合成就绪中位都 ≥19.9x，真实就绪都 ≥140.9x；`match_us` 三轮比值在 0.963–1.046 之间，按噪声处理，不声称改善。
 
 ## 复现（三条命令）
 

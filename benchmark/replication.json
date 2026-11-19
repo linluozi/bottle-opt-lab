@@ -1,0 +1,25 @@
+{
+ "run": 2,
+ "speedups": {
+  "real_digitalocean": {
+   "registration_ms": 146.032,
+   "ready_ms": 140.898,
+   "match_us": 1.004
+  },
+  "synthetic_100": {
+   "registration_ms": 2.236,
+   "ready_ms": 2.147,
+   "match_us": 0.991
+  },
+  "synthetic_2000": {
+   "registration_ms": 32.465,
+   "ready_ms": 19.979,
+   "match_us": 1.0
+  },
+  "synthetic_500": {
+   "registration_ms": 186.063,
+   "ready_ms": 173.627,
+   "match_us": 0.963
+  }
+ }
+}
